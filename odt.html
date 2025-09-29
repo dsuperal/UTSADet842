@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detachment 842</title>
+
+    <link rel="stylesheet" href="ODT.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>Detachment 842</h1>
+        <div class="nav-container">
+            <button class="nav" onclick="window.location.href = 'home.html' ">Home</button>
+            <button class="nav" onclick="window.location.href = 'resources.html' ">Resources</button>
+    
+            <!-- Wrap POC Access in a div for hover effect -->
+            <div class="nav-item">
+                <button class="nav">POC Access</button>
+                <div class="submenu">
+                    <div class="submenu-item"><a href="odt.html" class="submenu-link">ODT Continuity</a></div>
+                    <div class="submenu-item"><a href="pocjob.html" class="submenu-link">POC Job Continuity</a></div>
+
+                </div>
+            </div>
+            <button class="nav" onclick="window.location.href = 'innovation.html' "> The Innovation Docs</button>
+        </div>
+    </div>
+<br>
+<br>
+    <div class="box">
+        <div class="card" onclick="window.location.href='awardsbanquet.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_5916.jpg" style="height: 100%;">
+            </div>
+            <div class="sub-card named">
+                <span class="text_span"> Awards Banquet</span>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='botb.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_9587.png" style="height: 100%;" >
+            </div>
+            <div class="sub-card named">
+                <span class="text_span"> Battle of the Bomb </span>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='beast.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_9585.png" alt="Training at BEAST/PACER FORGE" style="height: 100%;">
+            </div>
+            <div class="sub-card named">
+                <span class="text_span">BEAST/PACER FORGE</span>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='bmt.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_2706.JPG" alt="BMT Graduation" style="height: 100%;">
+            </div>
+            <div class="sub-card named">
+                <span class="text_span">BMT Graduation</span>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='careerday.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_4401.JPG" style="height: 100%; " >
+            </div>
+            <div class="sub-card named">
+                <span class="text_span">Career Day</span>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='cdi.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_9357.CR2.jpg" style="height: 100%;" >
+            </div>
+            <div class="sub-card named">
+                <span class="text_span"> Combat Dining In </span>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='commissioning.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_4999.jpeg" style="height: 100%;">
+            </div>
+            <div class="sub-card named">
+                <span class="text_span"> Commissioning Ceremony </span>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='fiesta.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_0165.JPG" height="100%">
+            </div>
+            <div class="sub-card named">
+                <span class="text_span"> Fiesta </span>
+            </div>
+        </div>
+        
+        <div class="card" onclick="window.location.href='lrc.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_9577.jpg" style="height: 100%;">
+            </div>
+            <div class="sub-card named">
+                <span class="text_span"> LRCs </span>
+            </div>
+        </div>
+        
+        <div class="card" onclick="window.location.href='nsopcontinuity.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_8007.jpg" style="height: 100%;" >
+            </div>
+            <div class="sub-card named">
+                <span class="text_span"> NSOP </span>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='passinreview.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_8775.JPG" style="height: 100%;">
+            </div>
+            <div class="sub-card named">
+                <span class="text_span">Pass In Review</span>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='thunderdash.html' ">
+
+            <div class="card_container" >
+                <img src="assets/IMG_9576.jpg" style="height: 100%;">
+            </div>
+            <div class="sub-card named">
+                <span class="text_span">Thunderdash</span>
+            </div>
+        </div>
+
+    </div>
+
+    
+    </body>
+    <script>
+        // Redirect to login if not logged in
+        function isLoggedIn() {
+          return document.cookie.includes("poc_cookie=true");
+        }
+      
+        if (!isLoggedIn()) {
+            window.location.href = "poc_login.html"; // Change if your login page has a different name
+        }
+      </script>

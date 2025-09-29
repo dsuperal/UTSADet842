@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Detachment 842 Login</title>
+
+  <!-- Orbitron font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Optional: your site stylesheet -->
+  <link rel="stylesheet" href="home.css">
+
+  <style>
+    /* Page-specific styles (keeps visual match with home) */
+    body {
+      background-color: white;
+      color: #00308F;
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+    }
+
+    /* Header */
+    .main-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background-color: white;
+    }
+
+    .header-logo {
+      height: 48px;
+    }
+
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-text {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #00308F;
+    }
+
+    .top-nav {
+      display: flex;
+      gap: 18px;
+    }
+
+    .top-nav a {
+      text-decoration: none;
+      color: #00308F;
+      font-weight: bold;
+    }
+
+    .top-nav a:hover { color: #005bbb; }
+
+    /* Form */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: calc(100vh - 100px); /* leave room for header */
+      padding: 20px;
+    }
+
+    .form_area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border: 2px solid #264143;
+      border-radius: 16px;
+      box-shadow: 3px 4px 0px 1px rgba(191,191,191,1);
+      background: transparent;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      color: #00308F;
+      font-size: 2.2rem;
+    }
+
+    .form_style {
+      outline: none;
+      border: 2px solid #264143;
+      box-shadow: 3px 4px 0px 1px rgba(191,191,191,1);
+      width: 320px;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00308F;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      padding: 14px;
+      width: 320px;
+      font-size: 15px;
+      color: #00308F;
+      background: transparent;
+      border-radius: 10px;
+      font-weight: 800;
+      box-shadow: 3px 3px 0px 0px rgba(191,191,191,1);
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .btn:hover { opacity: 0.9; }
+
+    /* small helper text */
+    .hint { margin-top: 8px; color:#666; font-size:0.9rem; font-family: Roboto, Arial, sans-serif; }
+  </style>
+
+  <!-- If already logged in (cookie present) redirect immediately to protected page -->
+  <script>
+    // quick cookie check before page renders
+    if (document.cookie.includes("poc_cookie=true")) {
+      // logged in — go to protected page
+      window.location.href = "pocjob.html";
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo-group">
+      <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+      <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+      <a href="home.html"><img src="assets/detlogo.png" alt="DET Logo" class="header-logo"></a>
+      <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+    </div>
+
+    <nav class="top-nav">
+      <a href="home.html">HOME</a>
+      <a href="clubs.html">CLUBS</a>
+      <a href="resources.html">RESOURCES</a>
+      <a href="poc_login.html">POC ACCESS</a>
+    </nav>
+  </header>
+
+  <!-- Login Form -->
+  <main class="container" role="main">
+    <div class="form_area" role="form" aria-labelledby="login-title">
+      <h1 id="login-title">POC ACCESS</h1>
+
+      <input id="password" class="form_style" type="password" placeholder="ENTER PASSWORD" aria-label="Password">
+      <button id="submit" class="btn" type="button">LOG IN</button>
+
+
+    </div>
+  </main>
+
+  <!-- external JS (place file next to this HTML) -->
+  <script src="poc_login.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detachment 842 Login</title>
+    <style>
+        body {
+            background-color: #06233f;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            font-size: 300%;
+            color: #E27D3C;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .form_area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: transparent;
+            border: 2px solid #264143;
+            border-radius: 20px;
+            box-shadow: 3px 4px 0px 1px #E99F4C;
+        }
+        .form_style {
+            outline: none;
+            border: 2px solid #264143;
+            box-shadow: 3px 4px 0px 1px #E99F4C;
+            width: 290px;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+        .btn {
+            padding: 15px;
+            margin: 20px 0px;
+            width: 290px;
+            font-size: 15px;
+            color: white;
+            background: transparent;
+            border-radius: 10px;
+            font-weight: 800;
+            box-shadow: 3px 3px 0px 0px #E99F4C;
+            cursor: pointer;
+        }
+        .btn:hover {
+            opacity: .9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form_area">
+            <h1>Detachment 842</h1>
+            <input placeholder="Enter Det 842 Password" class="form_style" type="password" id="password" name="password" required>
+            <button type="button" class="btn" id="submit">LOG IN</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const submitButton = document.getElementById('submit');
+            const passwordInput = document.getElementById('password');
+
+            submitButton.addEventListener('click', function() {
+                event.preventDefault();
+                const enteredPassword = passwordInput.value.trim(); // Get password input and trim spaces
+                if (enteredPassword === "bestinblue") {
+                 //   alert("Login Attempt Successful");
+                    window.location.href = "home.html"; // Redirect correctly
+                } 
+                
+                else if (enteredPassword === "nsop") {
+                 //   alert("Login Attempt Successful");
+                    window.location.href = "nsop.html"; // Redirect correctly
+                }
+                    
+                else {
+                    alert("Invalid Credentials");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

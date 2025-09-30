@@ -1,63 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detachment 842 Login</title>
-    <style>
-        body {
-            background-color: #06233f;
-            color: white;
-            text-align: center;
-        }
-        h1 {
-            font-size: 300%;
-            color: #E27D3C;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            height: 100vh;
-        }
-        .form_area {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            background-color: transparent;
-            border: 2px solid #264143;
-            border-radius: 20px;
-            box-shadow: 3px 4px 0px 1px #E99F4C;
-        }
-        .form_style {
-            outline: none;
-            border: 2px solid #264143;
-            box-shadow: 3px 4px 0px 1px #E99F4C;
-            width: 290px;
-            padding: 12px;
-            border-radius: 4px;
-            font-size: 15px;
-        }
-        .btn {
-            padding: 15px;
-            margin: 20px 0px;
-            width: 290px;
-            font-size: 15px;
-            color: white;
-            background: transparent;
-            border-radius: 10px;
-            font-weight: 800;
-            box-shadow: 3px 3px 0px 0px #E99F4C;
-            cursor: pointer;
-        }
-        .btn:hover {
-            opacity: .9;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detachment 842 Login</title>
+
+  <!-- Orbitron font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="home.css"> <!-- optional shared stylesheet -->
+
+  <style>
+    body {
+      background-color: white;
+      color: #00308F; /* Air Force blue */
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    /* Header */
+    .main-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background-color: white;
+    }
+
+    .header-logo {
+      height: 50px;
+    }
+
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-text {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #00308F;
+    }
+
+    .top-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .top-nav a {
+      text-decoration: none;
+      color: #00308F;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .top-nav a:hover {
+      color: #005bbb;
+    }
+
+    /* Login form */
+    h1 {
+      font-size: 300%;
+      color: #00308F;
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: calc(100vh - 100px); /* leave room for header */
+    }
+
+    .form_area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: transparent;
+      border: 2px solid #264143;
+      border-radius: 20px;
+      box-shadow: 3px 4px 0px 1px rgb(191, 191, 191);
+    }
+
+    .form_style {
+      outline: none;
+      border: 2px solid #264143;
+      box-shadow: 3px 4px 0px 1px rgb(191, 191, 191);
+      width: 290px;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 15px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00308F;
+    }
+
+    .btn {
+      padding: 15px;
+      margin: 20px 0px;
+      width: 290px;
+      font-size: 15px;
+      color: #00308F;
+      background: transparent;
+      border-radius: 10px;
+      font-weight: 800;
+      box-shadow: 3px 3px 0px 0px rgb(191, 191, 191);
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .btn:hover {
+      opacity: .9;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo-group">
+      <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+      <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+        <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
+      </a>
+      <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+    </div>
+
+    
+  </header>
+
+  <!-- Login Form -->
+  <div class="container">
+    <div class="form_area">
+      <h1>DETACHMENT 842</h1>
+      <input placeholder="ENTER PASSWORD" class="form_style" type="password" id="password" name="password" required>
+      <button type="button" class="btn" id="submit">LOG IN</button>
+    </div>
+  </div>
+
+</body>
+</html>
 
     <div class="container">
         <div class="form_area">

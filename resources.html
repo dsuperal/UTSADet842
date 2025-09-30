@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="home.css">
-    
+    <link rel="stylesheet" href="resources.css">
 </head>
 <body>
     <!-- Header -->
@@ -47,7 +47,6 @@
     </header>
 
             <!-- Resources Section -->
-             <link rel="stylesheet" href="resources.css">
             <div class="resources-box">
                 <h2>RESOURCES</h2>
                 <div class="map-legend">
@@ -188,4 +187,19 @@
 </body>
 </html>
 
+<script>
+const pocButton = document.getElementById('poc-button');
+const pocMenu = document.getElementById('poc-submenu');
 
+pocButton.addEventListener('click', () => {
+  // toggle visibility
+  pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
+});
+
+// Optional: hide submenu if clicked outside
+document.addEventListener('click', (e) => {
+  if (!document.getElementById('poc-access').contains(e.target)) {
+    pocMenu.style.display = 'none';
+  }
+});
+</script>

@@ -3,32 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detachment 842</title>
+    <title>UT San Antonio Detachment 842</title>
 
+    <!-- Orbitron font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="pocjob.css">
-    <link rel="stylesheet" href="nav.css">
 </head>
-
 <body>
-    <div class="header-container">
-        <h1>Detachment 842</h1>
-        <div class="nav-container">
-            <button class="nav" onclick="window.location.href = 'home.html' ">Home</button>
-            <button class="nav" onclick="window.location.href = 'resources.html' ">Resources</button>
-    
-            <!-- Wrap POC Access in a div for hover effect -->
-            <div class="nav-item">
-                <button class="nav">POC Access</button>
-                <div class="submenu">
-                    <div class="submenu-item"><a href="odt.html" class="submenu-link">ODT Continuity</a></div>
-                    <div class="submenu-item"><a href="pocjob.html" class="submenu-link">POC Job Continuity</a></div>
-                </div>
-            </div>
-            <button class="nav" onclick="window.location.href = 'innovation.html' "> The Innovation Docs</button>
+    <!-- Header -->
+    <header class="main-header">
+
+
+    <!-- Logos -->
+    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+          <a href="home.html">
+  <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
+</a>
+
+    <!-- Text -->
+        <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+        <nav class="top-nav">
+             <a href="home.html">HOME</a>
+            <a href="clubs.html" target="_blank">CLUBS</a>
+            <a href="resources.html" target="_blank">RESOURCES</a>
+          <!--<a href="poc_login.html" target="_blank">POC ACCESS</a> -->  
+
+         <div class="nav-item" id="poc-access">
+    <button class="nav" id="poc-button">POC ACCESS ▾</button>
+    <div class="submenu" id="poc-submenu" style="display: none;">
+        <div class="submenu-item">
+            <a href="poc_login.html?target=odt.html" class="submenu-link">ODT Continuity</a>
+        </div>
+        <div class="submenu-item">
+            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC Job Continuity</a>
         </div>
     </div>
-<br>
-<br>
+</div>
+
+        </nav>
+    </header>
+
+
+
+
 <!--Command Staff-->
     <div style="padding-left: 20%">
         <div class="dropdown">
@@ -110,7 +130,7 @@
                     <a href="pocjob_continuity/A1_A2Commander_Sp2025 (1).pdf"> A-Staff Commander</a>
                 </article>
             </li>
-            <p> Scroll to View More </p>
+            
             <li class="listitem" role="listitem">
                 <article class="article">
                 <a href="pocjob_continuity/CAG_Sp2025.pdf">Commander's Action Group Officers</a>
@@ -203,7 +223,6 @@
                     <a href="pocjob_continuity/A4_Commander_Continuity.pdf"> A-Staff Commander</a>
                 </article>
             </li>
-            <p> Scroll to View More </p>
             <li class="listitem" role="listitem">
                 <article class="article">
                 <a href="pocjob_continuity/LRS_Officer_Continuity.pdf">Logistics and Assets Officers</a>
@@ -372,5 +391,23 @@
         </div>
         
     </div>
+
+    <script>
+const pocButton = document.getElementById('poc-button');
+const pocMenu = document.getElementById('poc-submenu');
+
+pocButton.addEventListener('click', () => {
+  // toggle visibility
+  pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
+});
+
+// Optional: hide submenu if clicked outside
+document.addEventListener('click', (e) => {
+  if (!document.getElementById('poc-access').contains(e.target)) {
+    pocMenu.style.display = 'none';
+  }
+});
+</script>
+
     </body>
     

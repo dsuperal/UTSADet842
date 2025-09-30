@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detachment 842</title>
+
+    <!-- Orbitron font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="ODT.css">
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <div class="header-container">
-        <h1>Detachment 842</h1>
-        <div class="nav-container">
-            <button class="nav" onclick="window.location.href = 'home.html' ">Home</button>
-            <button class="nav" onclick="window.location.href = 'resources.html' ">Resources</button>
-    
-            <!-- Wrap POC Access in a div for hover effect -->
-            <div class="nav-item">
-                <button class="nav">POC Access</button>
-                <div class="submenu">
-                    <div class="submenu-item"><a href="odt.html" class="submenu-link">ODT Continuity</a></div>
-                    <div class="submenu-item"><a href="pocjob.html" class="submenu-link">POC Job Continuity</a></div>
+    <!-- Header -->
+    <header class="main-header">
 
-                </div>
-            </div>
-            <button class="nav" onclick="window.location.href = 'innovation.html' "> The Innovation Docs</button>
+
+    <!-- Logos -->
+    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+          <a href="home.html">
+  <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
+</a>
+
+    <!-- Text -->
+        <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+        <nav class="top-nav">
+             <a href="home.html">HOME</a>
+            <a href="clubs.html" target="_blank">CLUBS</a>
+            <a href="resources.html" target="_blank">RESOURCES</a>
+          <!--<a href="poc_login.html" target="_blank">POC ACCESS</a> -->  
+
+         <div class="nav-item" id="poc-access">
+    <button class="nav" id="poc-button">POC ACCESS ▾</button>
+    <div class="submenu" id="poc-submenu" style="display: none;">
+        <div class="submenu-item">
+            <a href="poc_login.html?target=odt.html" class="submenu-link">ODT CONTINUITY</a>
+        </div>
+        <div class="submenu-item">
+            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
         </div>
     </div>
-<br>
-<br>
+</div>
+
+
+        </nav>
+    </header>
     <div class="box">
         <div class="card" onclick="window.location.href='awardsbanquet.html' ">
 
@@ -36,7 +52,7 @@
                 <img src="assets/IMG_5916.jpg" style="height: 100%;">
             </div>
             <div class="sub-card named">
-                <span class="text_span"> Awards Banquet</span>
+                <span class="text_span"> AWARDS BANQUET </span>
             </div>
         </div>
         <div class="card" onclick="window.location.href='botb.html' ">
@@ -45,7 +61,7 @@
                 <img src="assets/IMG_9587.png" style="height: 100%;" >
             </div>
             <div class="sub-card named">
-                <span class="text_span"> Battle of the Bomb </span>
+                <span class="text_span"> BATTLE OF THE BOMB </span>
             </div>
         </div>
         <div class="card" onclick="window.location.href='beast.html' ">
@@ -63,7 +79,7 @@
                 <img src="assets/IMG_2706.JPG" alt="BMT Graduation" style="height: 100%;">
             </div>
             <div class="sub-card named">
-                <span class="text_span">BMT Graduation</span>
+                <span class="text_span">BMT COIN/GRAD PARADE</span>
             </div>
         </div>
         <div class="card" onclick="window.location.href='careerday.html' ">
@@ -72,7 +88,7 @@
                 <img src="assets/IMG_4401.JPG" style="height: 100%; " >
             </div>
             <div class="sub-card named">
-                <span class="text_span">Career Day</span>
+                <span class="text_span">CAREER DAY</span>
             </div>
         </div>
         <div class="card" onclick="window.location.href='cdi.html' ">
@@ -81,7 +97,7 @@
                 <img src="assets/IMG_9357.CR2.jpg" style="height: 100%;" >
             </div>
             <div class="sub-card named">
-                <span class="text_span"> Combat Dining In </span>
+                <span class="text_span"> COMBAT DINING IN </span>
             </div>
         </div>
         <div class="card" onclick="window.location.href='commissioning.html' ">
@@ -90,7 +106,7 @@
                 <img src="assets/IMG_4999.jpeg" style="height: 100%;">
             </div>
             <div class="sub-card named">
-                <span class="text_span"> Commissioning Ceremony </span>
+                <span class="text_span"> COMISSIONING CEREMONY </span>
             </div>
         </div>
         <div class="card" onclick="window.location.href='fiesta.html' ">
@@ -99,7 +115,7 @@
                 <img src="assets/IMG_0165.JPG" height="100%">
             </div>
             <div class="sub-card named">
-                <span class="text_span"> Fiesta </span>
+                <span class="text_span"> FIESTA </span>
             </div>
         </div>
         
@@ -129,7 +145,7 @@
                 <img src="assets/IMG_8775.JPG" style="height: 100%;">
             </div>
             <div class="sub-card named">
-                <span class="text_span">Pass In Review</span>
+                <span class="text_span">PASS IN REVIEW</span>
             </div>
         </div>
         <div class="card" onclick="window.location.href='thunderdash.html' ">
@@ -138,21 +154,29 @@
                 <img src="assets/IMG_9576.jpg" style="height: 100%;">
             </div>
             <div class="sub-card named">
-                <span class="text_span">Thunderdash</span>
+                <span class="text_span">THUNDERDASH</span>
             </div>
         </div>
 
     </div>
 
-    
-    </body>
     <script>
-        // Redirect to login if not logged in
-        function isLoggedIn() {
-          return document.cookie.includes("poc_cookie=true");
-        }
-      
-        if (!isLoggedIn()) {
-            window.location.href = "poc_login.html"; // Change if your login page has a different name
-        }
-      </script>
+const pocButton = document.getElementById('poc-button');
+const pocMenu = document.getElementById('poc-submenu');
+
+pocButton.addEventListener('click', () => {
+  // toggle visibility
+  pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
+});
+
+// Optional: hide submenu if clicked outside
+document.addEventListener('click', (e) => {
+  if (!document.getElementById('poc-access').contains(e.target)) {
+    pocMenu.style.display = 'none';
+  }
+});
+</script>
+
+
+    
+   

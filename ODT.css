@@ -103,7 +103,7 @@
     transition: all 1s cubic-bezier(1, 0, 0, 1) 0.2s;
   }
   .card_container::after {
-    content: "See more";
+    content: "SEE MORE";
   
     position: absolute;
     z-index: 10;

@@ -1,0 +1,103 @@
+body {
+      background-color: white;
+      color: #00308F; /* Air Force blue */
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    /* Header */
+    .main-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background-color: white;
+    }
+
+    .header-logo {
+      height: 50px;
+    }
+
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-text {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #00308F;
+    }
+
+    .top-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .top-nav a {
+      text-decoration: none;
+      color: #00308F;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .top-nav a:hover {
+      color: #005bbb;
+    }
+
+    /* Login form */
+    h1 {
+      font-size: 300%;
+      color: #00308F;
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: calc(100vh - 100px); /* leave room for header */
+    }
+
+    .form_area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: transparent;
+      border: 2px solid #264143;
+      border-radius: 20px;
+      box-shadow: 3px 4px 0px 1px rgb(191, 191, 191);
+    }
+
+    .form_style {
+      outline: none;
+      border: 2px solid #264143;
+      box-shadow: 3px 4px 0px 1px rgb(191, 191, 191);
+      width: 290px;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 15px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00308F;
+    }
+
+    .btn {
+      padding: 15px;
+      margin: 20px 0px;
+      width: 290px;
+      font-size: 15px;
+      color: #00308F;
+      background: transparent;
+      border-radius: 10px;
+      font-weight: 800;
+      box-shadow: 3px 3px 0px 0px rgb(191, 191, 191);
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .btn:hover {
+      opacity: .9;
+    }

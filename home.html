@@ -1,178 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UT San Antonio Detachment 842</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>UT San Antonio Detachment 842</title>
 
-    <!-- Orbitron font -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Orbitron font -->
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="assets/css/home.css" />
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="main-header">
+	<!-- Header -->
+	<header class="main-header">
+		<div class="logo-group">
+			<img src="assets/images/airforcelogo.jpg" alt="Air Force Logo" class="header-logo" />
+			<img src="assets/images/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo" />
+			<img src="assets/images/detlogo.png" alt="DET Logo" class="header-logo" />
+			<div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+		</div>
+		<!-- Text -->
+		<div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+		<nav class="top-nav">
+			<a href="clubs.html" target="_blank">CLUBS</a>
+			<a href="resources.html" target="_blank">RESOURCES</a>
+			<!--<a href="poc_login.html" target="_blank">POC ACCESS</a> -->
+			<div class="nav-item" id="poc-access">
+				<button class="nav" id="poc-button">POC ACCESS ▾</button>
+				<div class="submenu" id="poc-submenu" style="display: none">
+					<div class="submenu-item">
+						<a href="poc_login.html?target=odt.html" class="submenu-link">ODT CONTINUITY</a>
+					</div>
+					<div class="submenu-item">
+						<a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
 
+	<!-- Carousel -->
+	<div class="carousel-container">
+		<div class="carousel">
+			<div class="carousel-track">
+				<!-- Slide 1 -->
+				<div class="carousel-item">
+					<img src="assets/images/mti3.JPG" alt="BCL Cadets" />
+					<div class="carousel-text">ORIs and FDEs 18 SEP</div>
+				</div>
 
-    <!-- Logos -->
-    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
-    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
-          <a href="home.html">
-  <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
-</a>
+				<!-- Slide 2 -->
+				<div class="carousel-item">
+					<img src="assets/images/ptwayne.JPG" alt="Pacer Forge" />
+					<div class="carousel-text">DRILL & CEREMONIES PRACTICE</div>
+				</div>
 
-    <!-- Text -->
-        <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
-        <nav class="top-nav">
-            <a href="clubs.html" target="_blank">CLUBS</a>
-            <a href="resources.html" target="_blank">RESOURCES</a>
-          <!--<a href="poc_login.html" target="_blank">POC ACCESS</a> -->  
+				<!-- Slide 3 -->
+				<div class="carousel-item">
+					<img src="assets/images/walking.JPG" alt="Command Staff Takeover" />
+					<div class="carousel-text">CADET CORE</div>
+				</div>
 
-         <div class="nav-item" id="poc-access">
-    <button class="nav" id="poc-button">POC ACCESS ▾</button>
-    <div class="submenu" id="poc-submenu" style="display: none;">
-        <div class="submenu-item">
-            <a href="poc_login.html?target=odt.html" class="submenu-link">ODT CONTINUITY</a>
-        </div>
-        <div class="submenu-item">
-            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
-        </div>
-    </div>
-</div>
+				<!-- Slide 4 -->
+				<div class="carousel-item">
+					<img src="assets/images/davis.JPG" alt="Leadership Lab" />
+					<div class="carousel-text">WE FORGE WARRIOR LEADERS</div>
+				</div>
 
-        </nav>
-    </header>
+				<!-- Slide 5 -->
+				<div class="carousel-item">
+					<img src="assets/images/bushong.JPG" alt="Leadership Lab 2" />
+					<div class="carousel-text">LEADERSHIP LABORATORY</div>
+				</div>
 
-    <!-- Carousel -->
-   <div class="carousel-container">
-        <div class="carousel">
-            <div class="carousel-track">
-                <!-- Slide 1 -->
-                <div class="carousel-item">
-                    <img src="assets/mti3.JPG" alt="BCL Cadets">
-                    <div class="carousel-text">ORIs and FDEs 18 SEP</div>
-                </div>
+				<!-- Slide 6 -->
+				<div class="carousel-item">
+					<img src="assets/images/alpha.JPG" alt="UTSA Volleyball" />
+					<div class="carousel-text">BEST IN BLUE</div>
+				</div>
+			</div>
 
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <img src="assets/ptwayne.JPG" alt="Pacer Forge">
-                    <div class="carousel-text">DRILL & CEREMONIES PRACTICE</div>
-                </div>
+			<!-- Carousel buttons -->
+			<button class="carousel-button prev" onclick="prevSlide()">
+				&#10094;
+			</button>
+			<button class="carousel-button next" onclick="nextSlide()">
+				&#10095;
+			</button>
+		</div>
+	</div>
 
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <img src="assets/walking.JPG" alt="Command Staff Takeover">
-                    <div class="carousel-text">CADET CORE</div>
-                </div>
+	<!-- DET 842 NEWS Section -->
+	<section class="det-news">
+		<h2 class="det-news-header">DET 842 NEWS</h2>
 
-                <!-- Slide 4 -->
-                <div class="carousel-item">
-                    <img src="assets/davis.JPG" alt="Leadership Lab">
-                    <div class="carousel-text"> WE FORGE WARRIOR LEADERS</div>
-                </div>
+		<div class="news-grid">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLScu14xR_KDrejr7Vc8nVDPLgq_koWFkZKz6Ygc6enS401wzzw/viewform"
+				target="_blank" class="news-link">
+				<div class="news-item">
+					<img src="assets/images/old.jpg" alt="News Image 1" />
+					<div class="news-overlay-text">
+						APPLICATION FOR WINGSTAFF TAKEOVER
+					</div>
+				</div>
+			</a>
 
-                <!-- Slide 5 -->
-                <div class="carousel-item">
-                    <img src="assets/bushong.JPG" alt="Leadership Lab 2">
-                    <div class="carousel-text">LEADERSHIP LABORATORY</div>
-                </div>
+			<div class="news-item">
+				<img src="assets/images/meanadmag.JPG" alt="News Image 2" />
+				<div class="news-overlay-text">WEBSITE FEEDBACK FORM</div>
+			</div>
 
-                <!-- Slide 6 -->
-                <div class="carousel-item">
-                    <img src="assets/alpha.JPG" alt="UTSA Volleyball">
-                    <div class="carousel-text">BEST IN BLUE</div>
-                </div>
-            </div>
+			<div class="news-item">
+				<img src="assets/images/oviandand.JPG" alt="News Image 3" />
+				<div class="news-overlay-text">FORM HERE</div>
+			</div>
+		</div>
+	</section>
 
-            <!-- Carousel buttons -->
-            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
-        </div>
-    </div>
+	<!-------------------------------------------->
 
-    <!-- DET 842 NEWS Section -->
-<section class="det-news">
-  <h2 class="det-news-header">DET 842 NEWS</h2>
-  
-  <div class="news-grid">
+	<!-- Info Sections -->
+	<section class="info-sections">
+		<div class="info-item">
+			<h3 class="info-header">USEFUL LINKS</h3>
+			<ul class="info-list">
+				<!-- <li>DET 842 INSTAGRAM</li> -->
+				<li>
+					<a href="https://docs.google.com/document/d/19Kjs--07GgiFaidPQw1p69dwXNZfYgRi_lGLuC9sgVU/edit?usp=sharing"
+						target="_blank">PA ALBUM</a>
+				</li>
+				<li>ABSENCE FORM</li>
+				<li>IG SUBMISSION FORM</li>
+				<li>MENTAL HEALTH CHECK</li>
+				<li>ALMOST FRIDAY SUBMISSIONS</li>
+				<li>LRS FORM</li>
+			</ul>
+		</div>
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScu14xR_KDrejr7Vc8nVDPLgq_koWFkZKz6Ygc6enS401wzzw/viewform" target="_blank" class="news-link">
-    <div class="news-item">
-      <img src="assets/old.jpg" alt="News Image 1">
-      <div class="news-overlay-text">APPLICATION FOR WINGSTAFF TAKEOVER
-      </div>
-    </div>
-    </a>
+		<div class="info-item">
+			<h3 class="info-header">DET GOALS</h3>
+			<ul class="info-list">
+				<li>SLAY</li>
+				<li>BASE VISITS</li>
+				<li>ODTs</li>
+			</ul>
+		</div>
 
-    <div class="news-item">
-      <img src="assets/meanadmag.JPG" alt="News Image 2">
-      <div class="news-overlay-text">WEBSITE FEEDBACK FORM</div>
-    </div>
+		<div class="info-item">
+			<h3 class="info-header">IMPORTANT DATES</h3>
+			<ul class="info-list">
+				<li>PFD - 22 & 25 SEP</li>
+				<li>PICTURE DAY - 06 OCT</li>
+				<li>ORIs & FDEs - 13 OCT</li>
+			</ul>
+		</div>
+	</section>
 
-    <div class="news-item">
-      <img src="assets/oviandand.JPG" alt="News Image 3">
-      <div class="news-overlay-text">FORM HERE</div>
-    </div>
-  </div>
-</section>
+	<script>
+		const pocButton = document.getElementById("poc-button");
+		const pocMenu = document.getElementById("poc-submenu");
 
-<!-------------------------------------------->
+		pocButton.addEventListener("click", () => {
+			// toggle visibility
+			pocMenu.style.display =
+				pocMenu.style.display === "block" ? "none" : "block";
+		});
 
-<!-- Info Sections -->
-<section class="info-sections">
-  <div class="info-item">
-    <h3 class="info-header">USEFUL LINKS</h3>
-    <ul class="info-list">
-   <!-- <li>DET 842 INSTAGRAM</li> -->  
-      <li>  <a href="https://docs.google.com/document/d/19Kjs--07GgiFaidPQw1p69dwXNZfYgRi_lGLuC9sgVU/edit?usp=sharing" target="_blank">PA ALBUM</a>
-      </li>
-      <li>ABSENCE FORM</li>
-      <li>IG SUBMISSION FORM</li>
-       <li>MENTAL HEALTH CHECK</li>
-       <li>ALMOST FRIDAY SUBMISSIONS</li>
-      <li>LRS FORM</li>
-    </ul>
-  </div>
+		// Optional: hide submenu if clicked outside
+		document.addEventListener("click", (e) => {
+			if (!document.getElementById("poc-access").contains(e.target)) {
+				pocMenu.style.display = "none";
+			}
+		});
+	</script>
 
-  <div class="info-item">
-    <h3 class="info-header">DET GOALS</h3>
-    <ul class="info-list">
-      <li>SLAY</li>
-      <li>BASE VISITS</li>
-      <li>ODTs</li>
-    </ul>
-  </div>
-
-  <div class="info-item">
-    <h3 class="info-header">IMPORTANT DATES</h3>
-    <ul class="info-list">
-      <li>PFD - 22 & 25 SEP</li>
-      <li>PICTURE DAY - 06 OCT</li>
-      <li>ORIs & FDEs - 13 OCT</li>
-    </ul>
-  </div>
-</section>
-
-
-<script>
-const pocButton = document.getElementById('poc-button');
-const pocMenu = document.getElementById('poc-submenu');
-
-pocButton.addEventListener('click', () => {
-  // toggle visibility
-  pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
-});
-
-// Optional: hide submenu if clicked outside
-document.addEventListener('click', (e) => {
-  if (!document.getElementById('poc-access').contains(e.target)) {
-    pocMenu.style.display = 'none';
-  }
-});
-</script>
-
-
-    <script src="home.js"></script>
+	<script src="assets/js/home.js"></script>
 </body>
+
 </html>

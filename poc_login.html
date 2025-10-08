@@ -1,190 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detachment 842 Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Detachment 842 Login</title>
 
-  <!-- Orbitron font -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Orbitron font -->
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="home.css"> <!-- optional shared stylesheet -->
-
-  <style>
-    body {
-      background-color: white;
-      color: #00308F; /* Air Force blue */
-      text-align: center;
-      font-family: 'Orbitron', sans-serif;
-    }
-
-    /* Header */
-    .main-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 30px;
-      background-color: white;
-    }
-
-    .header-logo {
-      height: 50px;
-    }
-
-    .logo-group {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .logo-text {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: #00308F;
-    }
-
-    .top-nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    .top-nav a {
-      text-decoration: none;
-      color: #00308F;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    .top-nav a:hover {
-      color: #005bbb;
-    }
-
-    /* Login form */
-    h1 {
-      font-size: 300%;
-      color: #00308F;
-      margin-top: 20px;
-    }
-
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height: calc(100vh - 100px); /* leave room for header */
-    }
-
-    .form_area {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      background-color: transparent;
-      border: 2px solid #264143;
-      border-radius: 20px;
-      box-shadow: 3px 4px 0px 1px rgb(191, 191, 191);
-    }
-
-    .form_style {
-      outline: none;
-      border: 2px solid #264143;
-      box-shadow: 3px 4px 0px 1px rgb(191, 191, 191);
-      width: 290px;
-      padding: 12px;
-      border-radius: 4px;
-      font-size: 15px;
-      font-family: 'Orbitron', sans-serif;
-      color: #00308F;
-    }
-
-    .btn {
-      padding: 15px;
-      margin: 20px 0px;
-      width: 290px;
-      font-size: 15px;
-      color: #00308F;
-      background: transparent;
-      border-radius: 10px;
-      font-weight: 800;
-      box-shadow: 3px 3px 0px 0px rgb(191, 191, 191);
-      cursor: pointer;
-      font-family: 'Orbitron', sans-serif;
-    }
-
-    .btn:hover {
-      opacity: .9;
-    }
-  </style>
+	<link rel="stylesheet" href="assets/css/home.css"> <!-- optional shared stylesheet -->
+	<link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="main-header">
-    <div class="logo-group">
-      <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
-      <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
-      <a href="home.html">
-        <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
-      </a>
-      <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
-    </div>
+	<!-- Header -->
+	<header class="main-header">
+		<div class="logo-group">
+			<img src="assets/images/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+			<img src="assets/images/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+			<img src="assets/images/detlogo.png" alt="DET Logo" class="header-logo">
+			<div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+		</div>
+		<nav class="top-nav">
+			<a href="home.html">HOME</a>
+			<a href="clubs.html">CLUBS</a>
+			<a href="resources.html">RESOURCES</a>
+			<a href="poc_login.html">POC ACCESS</a>
+		</nav>
+	</header>
 
-    <nav class="top-nav">
-      <a href="home.html">HOME</a>
-      <a href="clubs.html">CLUBS</a>
-      <a href="resources.html">RESOURCES</a>
-      <a href="poc_login.html">POC ACCESS</a>
-    </nav>
-  </header>
-
-  <!-- Login Form -->
-  <div class="container">
-    <div class="form_area">
-      <h1>POC ACCESS</h1>
-      <input placeholder="ENTER PASSWORD" class="form_style" type="password" id="password" name="password" required>
-      <button type="button" class="btn" id="submit">LOG IN</button>
-    </div>
-  </div>
+	<!-- Login Form -->
+	<div class="container">
+		<div class="form_area">
+			<h1>POC ACCESS</h1>
+			<input placeholder="ENTER PASSWORD" class="form_style" type="password" id="password" name="password"
+				required>
+			<button type="button" class="btn" id="submit">LOG IN</button>
+		</div>
+	</div>
 
 </body>
+
 </html>
 
 <body>
 
-    <div class="container">
-        <div class="form_area">
-            <h1>Detachment 842</h1>
-            <input placeholder="Enter POC ACCESS PASSWORD" class="form_style" type="password" id="password" name="password" required>
-            <button type="button" class="btn" id="submit">LOG IN</button>
-        </div>
-    </div>
+	<div class="container">
+		<div class="form_area">
+			<h1>Detachment 842</h1>
+			<input placeholder="Enter POC ACCESS PASSWORD" class="form_style" type="password" id="password"
+				name="password" required>
+			<button type="button" class="btn" id="submit">LOG IN</button>
+		</div>
+	</div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const submitButton = document.getElementById('submit');
-            const passwordInput = document.getElementById('password');
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const submitButton = document.getElementById('submit');
+			const passwordInput = document.getElementById('password');
 
-            submitButton.addEventListener('click', function() {
-                event.preventDefault();
-                const enteredPassword = passwordInput.value.trim(); // Get password input and trim spaces
-                if (enteredPassword === "byexample") {
-                 //   alert("Login Attempt Successful");
-                    window.location.href = "pocjob.html"; // Redirect correctly
-                } 
-                
-                else if (enteredPassword === "byexample2") {
-                 //   alert("Login Attempt Successful");
-                    window.location.href = "odt.html"; // Redirect correctly
-                }
-                    
-                else {
-                    alert("Invalid Credentials");
-                }
-            });
-        });
-    </script>
+			submitButton.addEventListener('click', function () {
+				event.preventDefault();
+				const enteredPassword = passwordInput.value.trim(); // Get password input and trim spaces
+				if (enteredPassword === "byexample") {
+					//   alert("Login Attempt Successful");
+					window.location.href = "pocjob.html"; // Redirect correctly
+				}
+
+				else if (enteredPassword === "byexample2") {
+					//   alert("Login Attempt Successful");
+					window.location.href = "odt.html"; // Redirect correctly
+				}
+
+				else {
+					alert("Invalid Credentials");
+				}
+			});
+		});
+	</script>
 
 
 
 </body>
+
 </html>

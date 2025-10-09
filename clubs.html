@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clubs | Det 842</title>
+
+  <!-- Orbitron font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="home.css">
+   <link rel="stylesheet" href="clubs.css">
+</head>
+
+<body>
+      <!-- Header -->
+    <header class="main-header">
+
+
+    <!-- Logos -->
+    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+          <a href="home.html">
+  <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
+</a>
+
+    <!-- Text -->
+        <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+        <nav class="top-nav">
+            <a href="home.html" target="_blank">HOME</a>
+           <a href="faqs.html" target="_blank">FAQs</a>
+            <a href="clubs.html" target="_blank">CLUBS</a>
+            <a href="resources.html" target="_blank">RESOURCES</a>
+          
+
+         <div class="nav-item" id="poc-access">
+    <button class="nav" id="poc-button">POC ACCESS ▾</button>
+    <div class="submenu" id="poc-submenu" style="display: none;">
+        <div class="submenu-item">
+            <a href="poc_login.html?target=odt.html" class="submenu-link">PDT CONTINUITY</a>
+        </div>
+        <div class="submenu-item">
+            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
+        </div>
+    </div>
+</div>
+
+        </nav>
+    </header>
+
+  <!-- Clubs Section -->
+
+    <!-- CLUB 1: Silver Wings -->
+ <div class="club-card">
+      <div class="club-image">
+        <img src="assets/aas.jpg" alt="Arnold Air Society Club">
+      </div>
+      <div class="club-content">
+        <h3>ARNOLD AIR SOCIETY (AAS)</h3>
+        <p><strong>Mission:</strong> XXX</p>
+        <p><strong>About:</strong>XXX </p>
+
+        <p><strong>Meetings:</strong> XXX</p>
+
+        <!-- <p><strong>Contact:</strong> <a href="mailto:aas.det842@gmail.com">C/BURRI</a></p>-->
+
+        <div class="club-links">
+          <a href="https://arnold-air.org/" target="_blank" class="club-btn">Learn More</a>
+          <a href="https://instagram.com/aas_det842" target="_blank" class="club-btn-outline">XXX</a>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- CLUB 2: Arnold Air Society -->
+    <div class="club-card">
+      <div class="club-image">
+        <img src="assets/silverwings.jpg" alt="Silver Wings Club">
+      </div>
+      <div class="club-content">
+        <h3>SILVER WINGS</h3>
+        <p><strong>Mission:</strong> XXX</p>
+
+        <p><strong>About:</strong> XXX</p>
+
+        <p><strong>Meetings:</strong> XXX</p>
+
+      <!--    <p><strong>Contact:</strong> <a href="mailto:silverwings.det842@gmail.com">C/KIANG OR C/NAVARRO</a></p> -->
+
+        <div class="club-links">
+          <a href="https://silverwings.org/" target="_blank" class="club-btn">Learn More</a>
+         <a href="https://instagram.com/silverwings_utsa" target="_blank" class="club-btn-outline">XXX</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- JS -->
+  <script>
+    const pocButton = document.getElementById('poc-button');
+    const pocMenu = document.getElementById('poc-submenu');
+    pocButton.addEventListener('click', () => {
+      pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
+    });
+    document.addEventListener('click', (e) => {
+      if (!document.getElementById('poc-access').contains(e.target)) {
+        pocMenu.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

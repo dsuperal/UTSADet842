@@ -1,118 +1,74 @@
-/* Resources section with border */
-.resources-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    border: 6px double #E27D3C;
-    overflow: hidden; /* Prevents content from overflowing */
-    width: 100%;
-    max-width: 900px; /* Adjust as needed */
-    margin: 0 auto; /* Centers the box horizontally */
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap; /* Ensures cards wrap instead of overflowing */
-    justify-content: center;
-    width: 100%;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjust min size */
-    gap: 15px;
-    width: 100%;
-    max-width: 900px; /* Ensures content stays inside */
-    padding: 10px;
-    justify-items: center; /* Centers cards within grid */
-}
-
-
-.cards .drill {
-  background-color: #a89ea0;
-}
-
-.cards .fitness {
-  background-color: #6bd7e5;
-}
-
-.cards .det {
-  background-color: #3380d4;
-}
-.cards .other {
-  background-color: #f4a97d;
-}
-
-.cards .card {
+/* Container for all cards */
+.box {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  height: 100px;
-  width: 100%; /* Make sure it adapts to the grid */
-  max-width: 220px; /* Prevents excessive stretching */
-  border-radius: 10px;
-  color: white;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
   cursor: pointer;
-  transition: 400ms;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Ensure all links inside the cards are properly centered */
-.r_tip {
-    font-size: 1em;
-    font-weight: 700;
-    color: white;
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Makes sure it fills the card */
-    width: 100%; /* Ensures full width */
-    text-align: center; /* Just in case */
+.card_container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
 
-
-
-.cards .card:hover {
-  transform: scale(1.1, 1.1);
+.sub-card {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
 }
 
-/* .cards:hover > .card:not(:hover) {
-  filter: blur(10px);
-  transform: scale(0.9, 0.9);
+.sub-card .text_span {
+  color: white;
+  font-family: 'roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-  */
 
-/* General styles for the map legend container */
-.map-legend {
-    display: flex;
-    flex-direction: row; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    gap: 5%;
-    width: 60%;
-    background-color: transparent;
-  }
-  
-  /* Style for each legend item */
-  .legend-item {
-    display: flex;
-    align-items: center; /* Align items horizontally */
-    margin-bottom: 8px; /* Space between each item */
-  }
-  
-  /* Style for the color box */
-  .legend-color {
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
-    margin-right: 10px; /* Space between color box and label */
-  }
-  
-  /* Style for the label text */
-  .legend-label {
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-  }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.25);
+}
 
+/* Section header */
+.resources-category h2 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: left;
+  color: #00308F;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+
+/* Category colors */
+.resources-category.drill .sub-card { background-color: #00308F; }
+.resources-category.fitness .sub-card { background-color: #00308F; }
+.resources-category.det .sub-card { background-color: #00308F; }
+.resources-category.other .sub-card { background-color: #00308F; }
+
+/* Optional: spacing for logo/text/nav */
+.logo-text {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: #00308F;
+  margin: 0 auto 10px;
+}

@@ -289,12 +289,12 @@ body {
 
 /* CONNECT SECTION */
 .connect-section {
-  background-color: #f2f2f2; /* light gray */
+  background-color: #00308F; /* light gray */
   padding: 50px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 3px solid #00308F;
+  border-top: 3px solid #ffffff;
 }
 
 .connect-content {
@@ -313,7 +313,7 @@ body {
 
 .connect-left h2 {
   font-family: 'Orbitron', sans-serif;
-  color: #00308F;
+  color: #ffffff;
   font-size: 1.8rem;
   margin-bottom: 20px;
   position: relative;
@@ -335,7 +335,7 @@ body {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  color: #00308F;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 

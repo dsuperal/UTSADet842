@@ -1,5 +1,5 @@
 // poc_login.js
-const CORRECT_PASSWORD = "byexample"; // change to your password
+const CORRECT_PASSWORD = "godfather"; // change to your password
 
 document.getElementById("submit").addEventListener("click", function() {
   const entered = document.getElementById("password").value;

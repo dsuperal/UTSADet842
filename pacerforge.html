@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UT San Antonio Detachment 842</title>
+
+  <!-- Orbitron font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="pdt2.css" />
+</head>
+
+<body>
+  <!-- ======= HEADER ======= -->
+  <header class="main-header">
+    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+    <a href="home.html">
+      <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
+    </a>
+
+    <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+
+    <nav class="top-nav">
+      <a href="home.html">HOME</a>
+      <a href="poc_afscs.html" target="_blank">POC AFSCs</a>
+      <a href="clubs.html" target="_blank">CLUBS</a>
+      <a href="resources.html" target="_blank">RESOURCES</a>
+
+      <div class="nav-item" id="poc-access">
+        <button class="nav" id="poc-button">POC ACCESS ▾</button>
+        <div class="submenu" id="poc-submenu" style="display: none;">
+          <div class="submenu-item">
+            <a href="poc_login.html?target=odt.html" class="submenu-link">PDT CONTINUITY</a>
+          </div>
+          <div class="submenu-item">
+            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <!-- ======= SPRING 2025 CONTINUITY ======= -->
+  <h2>SPRING 2025</h2>
+  <div class="card-container">
+    <div class="cards">
+      <div class="card other"><a class="r_tip" href="pacerforge_continuity/25 PACER FORGE Cost Sheet.xlsx">Cost Sheet</a></div>
+      <div class="card det"><a class="r_tip" href="pacerforge_continuity/PACER FORGE IPR Slides.pdf">IPR Slides</a></div>
+      <div class="card drill"><a class="r_tip" href="pacerforge_continuity/IRON RESCUE FRAGORD BCL - Scenario.pdf">IRONHOLD Scenario FRAGORD</a></div>
+      <div class="card drill"><a class="r_tip" href="pacerforge_continuity/IRON RESCUE SCENARIO EVALUTATOR.pdf">Evaluator Sheet</a></div>
+      <div class="card fitness"><a class="r_tip" href="pacerforge_continuity/(Print 4 of each sheet) 2025 BCL Cadets Master List - Flight List.pdf">BCL Master List</a></div>
+      <div class="card other"><a class="r_tip" href="pacerforge_continuity/POC_CADRE ROEs (PRINT 6).pdf">POC ROEs</a></div>
+      <div class="card drill"><a class="r_tip" href="pacerforge_continuity/(PRINT 15) 25 PACER FORGE EXORD.docx.pdf">EXORD</a></div>
+      <div class="card drill"><a class="r_tip" href="pacerforge_continuity/(PRINT 15) 25 PACER FORGE WARNORD.docx.pdf">WARNORD</a></div>
+      <div class="card det"><a class="r_tip" href="pacerforge_continuity/TCCC Slides.pptx.pdf">TCCC Slides</a></div>
+      <div class="card det"><a class="r_tip" href="pacerforge_continuity/SUT.pptx.pdf">Small Unit Tactics</a></div>
+    </div>
+  </div>
+
+  <!-- ======= SPRING 2024 CONTINUITY ======= -->
+  <h2>SPRING 2024 </h2>
+  <div class="card-container">
+    <div class="cards">
+      <div class="card drill"><a class="r_tip" href="pacerforge_continuity/pacerforge 24 Itinerary (1).pdf">Itinerary</a></div>
+      <div class="card det"><a class="r_tip" href="pacerforge_continuity/pacerforge 2024 After Action Report .docx.pdf">After Action Report (AAR)</a></div>
+      <div class="card fitness"><a class="r_tip" href="pacerforge_continuity/pacerforge 2024 FTP Cadets Master List.xlsx">FTP Master List</a></div>
+      <div class="card fitness"><a class="r_tip" href="pacerforge_continuity/pacerforge 2024 POC Roles Master List.xlsx - MASTER LIST.pdf">POC Master List</a></div>
+      <div class="card det"><a class="r_tip" href="pacerforge_continuity/pacerforge 2024 Weekly Update.pdf">Weekly Update</a></div>
+      <div class="card drill"><a class="r_tip" href="pacerforge_continuity/pacerforge 2024_ Equipment.xlsx">Equipment List</a></div>
+      <div class="card drill"><a class="r_tip" href="pacerforge_continuity/Spring 24 pacerforge EXORD.docx.pdf">EXORD</a></div>
+      <div class="card drill"><a class="r_tip" href="pacerforge_continuity/Spring 24 pacerforge OPORDS.docx.pdf">OPORD</a></div>
+      <div class="card drill"><a class="r_tip" href="pacerforge_continuity/Spring 24 pacerforge WARNORD.docx.pdf">WARNORD</a></div>
+    </div>
+  </div>
+
+  <script>
+    // Simple toggle for submenu
+    const pocButton = document.getElementById("poc-button");
+    const pocSubmenu = document.getElementById("poc-submenu");
+
+    pocButton.addEventListener("click", () => {
+      pocSubmenu.style.display = pocSubmenu.style.display === "none" ? "block" : "none";
+    });
+  </script>
+</body>
+</html>

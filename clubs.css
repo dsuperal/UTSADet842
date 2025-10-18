@@ -1,178 +1,134 @@
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: white;
-  color: #00308F;
-}
-
-.clubs-section {
-  text-align: center;
-  padding: 60px 10%;
   background-color: #ffffff;
-}
-
-.clubs-title {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;
   color: #00308F;
-  margin-bottom: 40px;
-  position: relative;
 }
 
-.clubs-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: #00308F;
-  margin: 10px auto 0;
-  border-radius: 2px;
+/* ==========================
+ Header
+========================== */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 2px solid #00308F;
 }
 
-/* CLUB CARD */
+/* Logos */
+.header-logo {
+    height: 90px;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Header text */
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: #00308F;
+  font-weight: bold;
+  margin: 0 auto; /* centers horizontally */
+}
+
+/* Club Cards */
+.clubs-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ← exactly 3 per row */
+  gap: 40px;
+  padding: 60px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+@media (max-width: 1000px) {
+  .clubs-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .clubs-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .club-card {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #f7f9fc;
+  background-color: #f8f9fc;
+  border: 2px solid #d0d4e0;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 48, 143, 0.15);
   overflow: hidden;
-  max-width: 1100px;
-  margin: 0 auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .club-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-.club-image {
-  flex: 1 1 45%;
-  height: 100%;
-}
-
+/* Image */
 .club-image img {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
 }
 
-.club-content {
-  flex: 1 1 55%;
-  padding: 40px;
-  text-align: left;
+/* Info */
+.club-info {
+  padding: 20px 25px;
 }
 
-.club-content h3 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.6rem;
-  color: #00308F;
-  margin-bottom: 15px;
-}
-
-.club-content p {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-.club-links {
-  margin-top: 20px;
-  display: flex;
-  gap: 15px;
-}
-
-.club-btn, .club-btn-outline {
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
-  transition: all 0.3s ease;
-}
-
-.club-btn {
-  background-color: #00308F;
-  color: white;
-}
-
-.club-btn:hover {
-  background-color: #001f5c;
-}
-
-.club-btn-outline {
-  border: 2px solid #00308F;
-  color: #00308F;
-  background: none;
-}
-
-.club-btn-outline:hover {
-  background-color: #00308F;
-  color: white;
-}
-
-/* CONNECT SECTION */
-.connect-section {
-  background-color: #f5f5f5;
-  padding: 40px 60px;
-}
-
-.connect-content {
+.club-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
 }
 
-.connect-left {
-  flex: 1;
-  color: #00308F;
+.club-header h3 {
   font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
-.connect-left h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+.contact {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #222;
+  margin-top: 5px;
 }
 
-.social-list {
-  list-style: none;
-  padding: 0;
-}
-
-.social-list li {
-  margin-bottom: 8px;
-}
-
-.social-list a {
+/* Dropdown Button */
+.dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
   color: #00308F;
-  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.social-list a:hover {
-  text-decoration: underline;
+.club-card.open .dropdown-btn {
+  transform: rotate(180deg);
 }
 
-.connect-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.connect-right img {
-  max-width: 90%;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.questions {
-  text-align: left;
-  margin-top: 25px;
-}
-
-.questions p {
-  font-size: 1rem;
-  color: #00308F;
+/* Dropdown Content */
+.club-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #333;
   line-height: 1.4;
+  margin-top: 10px;
+}
+
+.club-details p {
+  margin: 10px 0;
 }

@@ -13,39 +13,46 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <!-- Header -->
+   <!-- ================= NAV BAR ================= -->
+  <!-- Header -->
     <header class="main-header">
-        <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
-        <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
-        <a href="home.html"><img src="assets/detlogo.png" alt="DET Logo" class="header-logo"></a>
 
+
+    <!-- Logos -->
+    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+          <a href="home.html">
+  <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
+</a>
+
+    <!-- Text -->
         <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
-
         <nav class="top-nav">
-            <a href="home.html">HOME</a>
-            <a href="faqs.html" target="_blank">FAQs</a>
+          <a href="home.html" target="_blank">HOME</a>
+           <a href="poc_afscs.html" target="_blank">POC AFSCs</a>
             <a href="clubs.html" target="_blank">CLUBS</a>
             <a href="resources.html" target="_blank">RESOURCES</a>
 
-            <div class="nav-item" id="poc-access">
-                <button class="nav" id="poc-button">POC ACCESS ▾</button>
-                <div class="submenu" id="poc-submenu" style="display: none;">
-                    <div class="submenu-item">
-                        <a href="poc_login.html?target=odt.html" class="submenu-link">PDT CONTINUITY</a>
-                    </div>
-                    <div class="submenu-item">
-                        <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
-                    </div>
-                </div>
-            </div>
+         <div class="nav-item" id="poc-access">
+    <button class="nav" id="poc-button">POC ACCESS ▾</button>
+    <div class="submenu" id="poc-submenu" style="display: none;">
+        <div class="submenu-item">
+            <a href="poc_login.html?target=pdt.html" class="submenu-link">PDT CONTINUITY</a>
+        </div>
+        <div class="submenu-item">
+            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
+        </div>
+    </div>
+</div>
+
         </nav>
     </header>
 
-    <!-- Drill Section -->
+    <!-- Manuals Section -->
     <section class="resources-category drill">
-        <h2>DRILL AND STANDARDS</h2>
+        <h2>MANUALS</h2>
         <div class="box">
-            <div class="card" onclick="window.location.href='https://www.178wing.ang.af.mil/Portals/69/documents/afh33-337.pdf?ver=2016-12-15-101008-313'">
+            <div class="card" onclick="window.location.href='https://drive.google.com/file/d/1fEAs3OxTYTxco6f3q_yPXICw8G4ow7V4/view?usp=sharing'">
                 <div class="card_container">
                     <img src="assets/tongueandquill.png" alt="Tongue and Quill">
                 </div>
@@ -65,16 +72,16 @@
 
             <div class="card" onclick="window.location.href='https://drive.google.com/file/d/1mgesz4NkT7A6ygfLTLznJvNTRVOM9AzK/view?usp=sharing'">
                 <div class="card_container">
-                    <img src="assets/ibarraandsim.JPG" alt="DAFPAM">
+                    <img src="assets/dafpam.JPG" alt="DAFPAM">
                 </div>
                 <div class="sub-card named">
                     <span class="text_span">DAFPAM</span>
                 </div>
             </div>
 
-            <div class="card" onclick="window.location.href='https://static.e-publishing.af.mil/production/1/af_a1/publication/dafi36-2903/dafi36-2903.pdf'">
+            <div class="card" onclick="window.location.href='https://drive.google.com/file/d/1JMDQ4s7QINQZKSGalcwKE_csyoyOZKg3/view?usp=sharing'">
                 <div class="card_container">
-                    <img src="assets/bmt.JPG" alt="DAFI 36-2903">
+                    <img src="assets/dafi.png" alt="DAFI 36-2903">
                 </div>
                 <div class="sub-card named">
                     <span class="text_span">DAFI 36-2903</span>
@@ -83,13 +90,13 @@
         </div>
     </section>
 
-    <!-- Fitness Section -->
+    <!-- Important DocumentsS Section -->
     <section class="resources-category fitness">
-        <h2>FITNESS</h2>
+        <h2>IMPORTANT DOCUMENTS</h2>
         <div class="box">
-            <div class="card" onclick="window.location.href='/assets/FSQ 2021.pdf'">
+            <div class="card" onclick="window.location.href='https://drive.google.com/file/d/1qmK8g_n3cw7FuCjmOV3HbBQtHOAsOrXQ/view?usp=sharing'">
                 <div class="card_container">
-                    <img src="assets/bmt.JPG" alt="FSQ">
+                    <img src="assets/fsq.png" alt="FSQ">
                 </div>
                 <div class="sub-card named">
                     <span class="text_span">FSQ</span>
@@ -104,41 +111,86 @@
                     <span class="text_span">PT SCORECARD</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- DET Info Section -->
-    <section class="resources-category det">
-        <h2>DET INFORMATION</h2>
-        <div class="box">
-            <div class="card" onclick="window.location.href='https://drive.google.com/drive/folders/1KeAfomDUytdoyVec5zvCFwgwBsNq4lWe'">
+        <div class="card" onclick="window.location.href='https://docs.google.com/presentation/d/1ly0oVgfJOP207PAOlQX3wF9MEf0IWOMu/edit?usp=sharing&ouid=109263377781552805610&rtpof=true&sd=true'">
                 <div class="card_container">
-                    <img src="assets/ibarraandsim.JPG" alt="Warrior Knowledge">
+                    <img src="assets/warriorknowledgefall2025.png" alt="Warrior Knowledge">
                 </div>
                 <div class="sub-card named">
                     <span class="text_span">WARRIOR KNOWLEDGE</span>
                 </div>
             </div>
 
-            <div class="card" onclick="window.location.href='/assets/Fall 2025 Organizational Chart.pdf'">
+            <div class="card" onclick="window.location.href='https://drive.google.com/file/d/10_gmfVYlN03UniepVhF04pKTYB-e-bwy/view?usp=sharing'">
                 <div class="card_container">
-                    <img src="assets/ibarraandsim.JPG" alt="Org Chart">
+                    <img src="assets/orgchartfall2025.png" alt="Org Chart">
                 </div>
                 <div class="sub-card named">
                     <span class="text_span">ORG CHART</span>
                 </div>
             </div>
 
-            <div class="card" onclick="window.location.href='/assets/Fall Term 2025 Cadet Handbook - Final.pdf'">
+            <div class="card" onclick="window.location.href='https://drive.google.com/file/d/12eqMrfO6zS_meU4S2yGLQzZ_bmV7fOxW/view?usp=sharing'">
                 <div class="card_container">
-                    <img src="assets/ibarraandsim.JPG" alt="Cadet Handbook">
+                    <img src="assets/cadethandbookfall2025.png" alt="Cadet Handbook">
                 </div>
                 <div class="sub-card named">
                     <span class="text_span">CADET HANDBOOK</span>
                 </div>
             </div>
 
-            <div class="card" onclick="window.location.href='https://docs.google.com/document/d/190h6Xa7weY-yfj8B52mQdFtnac6S7z9IECiqhMDp6m4/edit?tab=t.0'">
+      <div class="card" onclick="window.location.href='https://drive.google.com/file/d/1h2btAdgZBV_xmu2O8GNHz_zHIOqnLqI0/view?usp=sharing'">
+                <div class="card_container">
+                    <img src="assets/form2.png" alt="Form 2">
+                </div>
+                <div class="sub-card named">
+                    <span class="text_span">FORM 2</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+               <!-- Template Section -->
+    <section class="resources-category other">
+        <h2>TEMPLATES</h2>
+        <div class="box">
+            <div class="card" onclick="window.location.href='https://docs.google.com/document/d/1Jhlqjud2BrKhGCEbPxmEwlnqe2itHFZk/edit?usp=sharing&ouid=109263377781552805610&rtpof=true&sd=true'">
+                <div class="card_container">
+                    <img src="assets/memotemplate.png" alt="Memo Template">
+                </div>
+                <div class="sub-card named">
+                    <span class="text_span">MEMO TEMPLATE</span>
+                </div>
+            </div>
+
+            <div class="card" onclick="window.location.href='https://docs.google.com/presentation/d/1nqc0TabF6_baWVnYobqyd2tNra4q7RvR/edit?usp=sharing&ouid=109263377781552805610&rtpof=true&sd=true'">
+                <div class="card_container">
+                    <img src="assets/slidetemplate.png" alt="Slides Template">
+                </div>
+                <div class="sub-card named">
+                    <span class="text_span">SLIDES TEMPLATE</span>
+                </div>
+            </div>
+
+        <div class="card" onclick="window.location.href='https://docs.google.com/presentation/d/1nqc0TabF6_baWVnYobqyd2tNra4q7RvR/edit?usp=sharing&ouid=109263377781552805610&rtpof=true&sd=true'">
+                <div class="card_container">
+                    <img src="assets/flightrankings.png" alt="Flight Rankings">
+                </div>
+                <div class="sub-card named">
+                    <span class="text_span">FLIGHT RANKINGS</span>
+                </div>
+            </div>
+        </div>
+            
+            
+    </section>
+
+    <!-- Other Section -->
+    <section class="resources-category det">
+        <h2>OTHER</h2>
+        <div class="box">
+            <div class="card" onclick="window.location.href='https://docs.google.com/document/d/1gCW1pfp_ax7Q7-QH17Vdci_Kql_HHfL9UNANJTPw1HU/edit?usp=sharing'">
                 <div class="card_container">
                     <img src="assets/pastpaalbums.jpg" alt="PA Album">
                 </div>
@@ -147,58 +199,17 @@
                 </div>
             </div>
 
-            <div class="card" onclick="window.location.href='/assets/F25 OPLAN final.pdf'">
+            <div class="card" onclick="window.location.href='https://wings.holmcenter.com/'">
                 <div class="card_container">
-                    <img src="assets/ibarraandsim.JPG" alt="O-Plan">
-                </div>
-                <div class="sub-card named">
-                    <span class="text_span">O-PLAN</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Other Section -->
-    <section class="resources-category other">
-        <h2>OTHER</h2>
-        <div class="box">
-            <div class="card" onclick="window.location.href='https://wings.holmcenter.com/psc/hcp/LANDING/PORT_HCP/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?&'">
-                <div class="card_container">
-                    <img src="assets/ibarraandsim.JPG" alt="WINGS">
+                    <img src="assets/wings.png" alt="WINGS">
                 </div>
                 <div class="sub-card named">
                     <span class="text_span">WINGS</span>
                 </div>
             </div>
 
-            <div class="card" onclick="window.location.href='https://drive.google.com/file/d/1_RmTx-w9-r549l8dRlfdQHA_QWIKRTVA/view?usp=sharing'">
-                <div class="card_container">
-                    <img src="assets/ibarraandsim.JPG" alt="Form 2">
-                </div>
-                <div class="sub-card named">
-                    <span class="text_span">FORM 2</span>
-                </div>
-            </div>
+            </section>
 
-            <div class="card" onclick="window.location.href='https://docs.google.com/document/d/1Jhlqjud2BrKhGCEbPxmEwlnqe2itHFZk/edit?usp=drive_link&ouid=116295244526067363440&rtpof=true&sd=true'">
-                <div class="card_container">
-                    <img src="assets/ibarraandsim.JPG" alt="Memo Template">
-                </div>
-                <div class="sub-card named">
-                    <span class="text_span">MEMO TEMPLATE</span>
-                </div>
-            </div>
-
-            <div class="card" onclick="window.location.href='https://docs.google.com/presentation/d/1o0v3NFSBZkKrBWpKE1U-Q9TfuFu_FZ1P/edit?slide=id.p4#slide=id.p4'">
-                <div class="card_container">
-                    <img src="assets/ibarraandsim.JPG" alt="Powerpoint Template">
-                </div>
-                <div class="sub-card named">
-                    <span class="text_span">POWERPOINT TEMPLATE</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <script>
         const pocButton = document.getElementById('poc-button');

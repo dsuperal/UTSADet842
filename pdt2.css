@@ -1,0 +1,238 @@
+/* ==============================
+   GLOBAL STYLES
+   ============================== */
+body {
+  font-family: 'Roboto', sans-serif; /* Default font for content */
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+}
+
+/* ==============================
+   HEADER STYLES
+   ============================== */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 2px solid #00308F;
+}
+
+/* Logos */
+.header-logo {
+    height: 90px;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Header text */
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: #00308F;
+  font-weight: bold;
+  margin: 0 auto; /* centers horizontally */
+}
+
+/* ==============================
+   HEADINGS
+   ============================== */
+h1, h2, h3, h4 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #000000;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* ==============================
+   DESCRIPTIONS
+   ============================== */
+.desc {
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+}
+
+/* ==============================
+   CARD CONTAINER (GRID)
+   ============================== */
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px;
+  width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+}
+
+/* ==============================
+   INDIVIDUAL CARD
+   ============================== */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ==============================
+   CARD LINKS
+   ============================== */
+.card a {
+  text-decoration: none;
+  color: #00308F;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+
+/* ==============================
+   CARD DROPDOWN SECTIONS
+   ============================== */
+.sub-card {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  min-width: 11.5rem;
+  height: 2.25rem;
+  background-color: hsl(24, 6%, 83%);
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.sub-card.category {
+  justify-content: space-between;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.sub-card.named {
+  justify-content: center;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.sub-card .text_span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(240, 15%, 9%);
+  text-transform: capitalize;
+}
+
+.sub-card .icon_svg {
+  width: 1rem;
+  fill: hsl(240, 15%, 9%);
+}
+
+/* ==============================
+   DROPDOWN ANIMATION
+   ============================== */
+.card:hover .sub-card.category {
+  transform: translateY(100%);
+}
+
+.card:hover .sub-card.named {
+  transform: translateY(-100%);
+}
+
+/* ==============================
+   CARD IMAGE CONTAINER
+   ============================== */
+.card_container {
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  width: 17rem;
+  height: 14rem;
+  background-color: hsl(299, 100%, 83%);
+  border-radius: 0.5rem;
+}
+
+.card_container::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0rem;
+  aspect-ratio: 1;
+  background-color: hsl(240, 15%, 9%, 0.2);
+  border-radius: 50%;
+  transform-origin: center;
+  transition: all 1s cubic-bezier(1, 0, 0, 1) 0.2s;
+}
+
+.card_container::after {
+  content: "SEE MORE";
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  box-sizing: border-box;
+  width: 0rem;
+  aspect-ratio: 1;
+  background-color: hsl(240, 15%, 9%, 0.5);
+  font-size: 0rem;
+  font-weight: bold;
+  color: hsl(0,0%,83%);
+  text-align: center;
+  border-radius: 50%;
+  transform-origin: center;
+  transition: all 1s cubic-bezier(1, 0, 0, 1) 0s;
+}
+
+.card:hover .card_container::before {
+  width: 22.5rem;
+}
+
+.card:hover .card_container::after {
+  padding: 1rem;
+  width: 5rem;
+  font-size: 0.75rem;
+  transition: all 0.3s ease-in-out 0.4s;
+}
+
+.card_container .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  fill: hsl(240, 15%, 9%);
+}

@@ -76,10 +76,17 @@ body {
 }
 
 
-/* POC submenu */
-#poc-access { position: relative; }
+/* ===== DROPDOWN MENU STYLES ===== */
 
-#poc-button {
+/* General nav item container */
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+/* Shared dropdown button styles (POC + Resources) */
+#poc-button,
+#Resources-button {
     background: transparent;
     border: none;
     color: #00308F;
@@ -88,32 +95,57 @@ body {
     font-family: 'Orbitron', sans-serif;
     font-size: 1rem;
     padding: 0;
+    transition: color 0.3s ease;
 }
 
-#poc-button:hover { color: #005bbb; }
+#poc-button:hover,
+#Resources-button:hover {
+    color: #005bbb;
+}
 
-#poc-submenu {
+/* Shared submenu container styles */
+#poc-submenu,
+#Resources-submenu {
     display: none;
     position: absolute;
     background-color: white;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     z-index: 1000;
-    min-width: 150px;
+    min-width: 180px;
     flex-direction: column;
     padding: 5px 0;
+    border-radius: 6px;
 }
 
-#poc-submenu .submenu-item { padding: 8px 12px; }
+/* Individual submenu items */
+.submenu-item {
+    padding: 8px 12px;
+}
 
-#poc-submenu .submenu-item a {
+/* Submenu links */
+.submenu-link {
     color: #00308F;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#poc-submenu .submenu-item a:hover {
+.submenu-link:hover {
     background-color: #e5e5e5;
-    display: block;
+    color: #001f66;
+}
+
+/* Ensure dropdown arrow spacing */
+.nav-item button::after {
+    content: "";
+    margin-left: 5px;
+}
+
+/* Optional: make dropdowns align neatly below the buttons */
+.nav-item {
+    vertical-align: middle;
 }
 
 /* ==========================
@@ -356,6 +388,15 @@ body {
   height: auto;
   border-radius: 12px;
   box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #00308F;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 /* Responsive adjustments */

@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #1b1b1b;
+}
+
+/* Filter */
+.filter-section {
+  font-family: 'Orbitron', sans-serif;
+  color: #000000;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.filter-btn {
+  background-color: #00308F;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #007bff;
+}
+
+/* AFSC Sections */
+.afsc-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem 4rem;
+}
+
+.afsc-group {
+  width: 90%;
+  max-width: 900px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.afsc-group:hover {
+  transform: translateY(-3px);
+}
+
+.afsc-header {
+  width: 100%;
+  background: #00308F;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  text-align: left;
+}
+
+.afsc-header span {
+  font-weight: bold;
+}
+
+.afsc-content {
+  display: none;
+  padding: 1.5rem 2rem 2rem;
+}
+
+/* Layout for image + cadet list side by side */
+.afsc-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* keeps layout clean on smaller screens */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+}
+
+/* AFSC image styling */
+.afsc-image {
+  width: 40%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Cadet list styling */
+.cadet-list {
+  flex: 1;
+}
+
+.cadet-list h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00308F;
+  margin-bottom: 0.5rem;
+}
+
+.cadet-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.8rem;
+}
+
+.cadet-list li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+/* Optional: note under cadets */
+.afsc-note {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.8rem;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .afsc-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .afsc-image {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .cadet-list {
+    width: 100%;
+  }
+}
+
+
+/* FAQ */
+.faq {
+  margin-top: 1.5rem;
+}
+
+.faq h4 {
+  color: #00308F;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item {
+  background: #f2f5ff;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-weight: bold;
+  color: #00308F;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 1rem 1rem;
+  color: #333;
+}
+
+/* Links Section */
+.links-section {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #000000;
+  padding: 3rem 1rem;
+  background: #e9eefb;
+  border-top: 3px solid #00308F;
+  
+}
+
+.links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.links-grid a {
+  background-color: #00308F;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.links-grid a:hover {
+  background-color: #005bbb;
+}
+
+/* Footer */
+footer {
+  background-color: #00308F;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}

@@ -13,32 +13,58 @@
   <link rel="stylesheet" href="pocjob.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="main-header">
-    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo" />
-    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo" />
-    <a href="home.html"><img src="assets/detlogo.png" alt="DET Logo" class="header-logo" /></a>
-    <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+   <!-- ================= NAV BAR ================= -->
+    <!-- Header -->
+    <header class="main-header">
 
-    <nav class="top-nav">
-      <a href="home.html">HOME</a>
-      <a href="poc_afscs.html" target="_blank">POC AFSCs</a>
-      <a href="clubs.html" target="_blank">CLUBS</a>
-      <a href="resources.html" target="_blank">RESOURCES</a>
 
-      <div class="nav-item" id="poc-access">
-        <button class="nav" id="poc-button">POC ACCESS ▾</button>
-        <div class="submenu" id="poc-submenu" style="display: none;">
-          <div class="submenu-item">
-            <a href="poc_login.html?target=pdt.html" class="submenu-link">PDT CONTINUITY</a>
-          </div>
-          <div class="submenu-item">
-            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
-          </div>
+    <!-- Logos -->
+    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+          <a href="home.html">
+  <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
+</a>
+
+    <!-- Text -->
+        <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+        <nav class="top-nav">
+            <a href="home.html" target="_blank">HOME</a>
+           <a href="weekly_folders.html" target="_blank">WEEKLY FOLDERS</a>
+
+            <!-- Resources dropdown -->
+    <div class="nav-item" id="Resources-access"> 
+        <button class="nav" id="Resources-button">RESOURCES ▾</button>
+        <div class="submenu" id="Resources-submenu" style="display: none;">
+            <div class="submenu-item">
+                <a href="materials.html" class="submenu-link">MATERIALS</a>
+            </div>
+              <div class="submenu-item">
+                <a href="dc_videos.html" class="submenu-link">D&C VIDEOS</a>
+            </div>
+            <div class="submenu-item">
+                <a href="poc_afscs.html" class="submenu-link">POC AFSCs</a>
+            </div>
+              <div class="submenu-item">
+                <a href="clubs.html" class="submenu-link">CLUBS</a>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </div>
+
+    <!-- POC ACCESS dropdown -->
+         <div class="nav-item" id="poc-access">
+    <button class="nav" id="poc-button">POC ACCESS ▾</button>
+    <div class="submenu" id="poc-submenu" style="display: none;">
+        <div class="submenu-item">
+            <a href="poc_login.html?target=pdt.html" class="submenu-link">PDT CONTINUITY</a>
+        </div>
+        <div class="submenu-item">
+            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
+        </div>
+    </div>
+</div>
+
+        </nav>
+    </header>
 
   <!-- Main Title -->
   <h1 class="page-title">SPRING 2025</h1>

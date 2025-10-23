@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT San Antonio Detachment 842</title>
+
+    <!-- Fonts and styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="poc_afscs.css">
+</head>
+<body>
+    <!-- ================= NAV BAR ================= -->
+    <!-- Header -->
+    <header class="main-header">
+
+
+    <!-- Logos -->
+    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+          <a href="home.html">
+  <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
+</a>
+
+    <!-- Text -->
+        <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+        <nav class="top-nav">
+           <a href="weekly_folders.html" target="_blank">WEEKLY FOLDERS</a>
+
+            <!-- Resources dropdown -->
+    <div class="nav-item" id="Resources-access"> 
+        <button class="nav" id="Resources-button">RESOURCES ▾</button>
+        <div class="submenu" id="Resources-submenu" style="display: none;">
+            <div class="submenu-item">
+                <a href="materials.html" class="submenu-link">MATERIALS</a>
+            </div>
+              <div class="submenu-item">
+                <a href="dc_videos.html" class="submenu-link">D&C VIDEOS</a>
+            </div>
+            <div class="submenu-item">
+                <a href="poc_afscs.html" class="submenu-link">POC AFSCs</a>
+            </div>
+              <div class="submenu-item">
+                <a href="clubs.html" class="submenu-link">CLUBS</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- POC ACCESS dropdown -->
+         <div class="nav-item" id="poc-access">
+    <button class="nav" id="poc-button">POC ACCESS ▾</button>
+    <div class="submenu" id="poc-submenu" style="display: none;">
+        <div class="submenu-item">
+            <a href="poc_login.html?target=pdt.html" class="submenu-link">PDT CONTINUITY</a>
+        </div>
+        <div class="submenu-item">
+            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
+        </div>
+    </div>
+</div>
+
+        </nav>
+    </header>
+
+
+  <!-- FILTER SECTION -->
+  <section class="filter-section">
+    <h2>FILTER BY AIR FORCE SPECIALTY CODE (AFSC)</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-afsc="all">All</button>
+      <button class="filter-btn" data-afsc="Rated">Rated</button>
+      <button class="filter-btn" data-afsc="1X">1X - Operations (Non-Rated)</button>
+      <button class="filter-btn" data-afsc="2X">2X - Logistics</button>
+      <button class="filter-btn" data-afsc="3X">3X - Support</button>
+      <button class="filter-btn" data-afsc="6X">6X – Acquisition & Finance</button>
+      <button class="filter-btn" data-afsc="13S">Space</button>
+      <button class="filter-btn" data-afsc="21A">Nursing</button>
+    </div>
+  </section>
+
+<!-- ================= Pilot ================= -->
+<section class="afsc-section">
+  <div class="afsc-group" data-afsc="Rated">
+    <button class="afsc-header">11X – Pilot <span>+</span></button>
+    <div class="afsc-content">
+      <div class="afsc-flex">
+        <img src="assets/pilot_afsc.JPG" alt="Pilot Cadets" class="afsc-image">
+        
+        <div class="cadet-list">
+          <h3>Cadets:</h3>
+          <ul>
+            <li>C/Eggers</li>
+            <li>C/Silva</li>
+            <li>C/Oveson</li>
+            <li>C/Jones</li>
+            <li>C/Anderson</li>
+            <li>C/Starr</li>
+          </ul>
+          <p class="afsc-note">“We likes planes.”</p>
+        </div>
+      </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+          <h4>AFSC FAQs</h4>
+          <div class="faq-item">
+            <button class="faq-question">What’s the timeline for UPT?<span>+</span></button>
+            <div class="faq-answer">UPT typically begins within a year of commissioning and lasts about a year.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I choose my aircraft?<span>+</span></button>
+            <div class="faq-answer">Aircraft selection is based on performance and availability during training.</div>
+          </div>
+          <div class="faq-item">
+            <a href="https://www.airforce.com/careers/aviation-and-flight/pilot" 
+        target="_blank">AIR FORCE PILOT AFSC INFO PAGE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- ================= CSO ================= -->
+
+  <div class="afsc-group" data-afsc="Rated">
+    <button class="afsc-header">12X – CSO <span>+</span></button>
+    <div class="afsc-content">
+      <div class="afsc-flex">
+        <img src="assets/detopp_5.JPG" alt="CSO Cadets" class="afsc-image">
+        
+        <div class="cadet-list">
+          <h3>Cadet:</h3>
+          <ul>
+            <li>C/Norris</li>
+          </ul>
+          <p class="afsc-note">Farthest thing from a pilot.</p>
+        </div>
+      </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+          <h4>AFSC FAQs</h4>
+          <div class="faq-item">
+            <button class="faq-question">xxx?<span>+</span></button>
+            <div class="faq-answer">xxx</div>
+          </div>
+          <div class="faq-item">
+            <a href="https://www.airforce.com/careers/aviation-and-flight/combat-systems-officer" 
+        target="_blank">AIR FORCE 12X AFSC INFO PAGE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- ================= ABM ================= -->
+
+  <div class="afsc-group" data-afsc="Rated">
+    <button class="afsc-header">13B – ABM <span>+</span></button>
+    <div class="afsc-content">
+      <div class="afsc-flex">
+        <img src="assets/detopp_2.JPG" alt="ABM Cadets" class="afsc-image">
+        
+        <div class="cadet-list">
+          <h3>Cadet:</h3>
+          <ul>
+            <li>C/Magnuson</li>
+          </ul>
+          <p class="afsc-note">What even is ABM?</p>
+        </div>
+      </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+          <h4>AFSC FAQs</h4>
+          <div class="faq-item">
+            <button class="faq-question">xxx?<span>+</span></button>
+            <div class="faq-answer">xxx</div>
+          </div>
+          <div class="faq-item">
+            <a href="https://www.airforce.com/careers/aviation-and-flight/air-battle-manager" 
+        target="_blank">AIR FORCE 13B AFSC INFO PAGE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- ================= Nucs and Missiles ================= -->
+
+  <div class="afsc-group" data-afsc="1X">
+    <button class="afsc-header">13NX – Nuclear and Missile Ops <span>+</span></button>
+    <div class="afsc-content">
+      <div class="afsc-flex">
+        <img src="assets/detopp_2.JPG" alt="ABM Cadets" class="afsc-image">
+        
+        <div class="cadet-list">
+          <h3>Cadets:</h3>
+          <ul>
+            <li>C/Burton</li>
+            <li>C/Gibson</li>
+          </ul>
+          <p class="afsc-note">MISSSIILLEESS!!!</p>
+        </div>
+      </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+          <h4>AFSC FAQs</h4>
+          <div class="faq-item">
+            <button class="faq-question">xxx?<span>+</span></button>
+            <div class="faq-answer">xxx</div>
+          </div>
+          <div class="faq-item">
+            <a href="https://www.airforce.com/careers/science-and-technology/nuclear-and-missile-operations-officer" 
+        target="_blank">AIR FORCE 13NX AFSC INFO PAGE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- LINKS SECTION -->
+  <section class="links-section">
+    <h2>EXPLORE MORE</h2> <br>
+    <div class="links-grid">
+      <a href="https://www.airforce.com/careers" target="_blank">Air Force Careers</a>
+      <a href="https://www.spaceforce.com/careers" target="_blank">Space Force Careers</a>
+      <a href="https://www.airuniversity.af.edu/" target="_blank">Air University</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Detachment 842 | University of Texas at San Antonio</p>
+  </footer>
+
+  <script>
+    // Filter logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const afscGroups = document.querySelectorAll('.afsc-group');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelector('.filter-btn.active').classList.remove('active');
+        btn.classList.add('active');
+        const afsc = btn.dataset.afsc;
+        afscGroups.forEach(group => {
+          group.style.display = (afsc === 'all' || group.dataset.afsc === afsc) ? 'block' : 'none';
+        });
+      });
+    });
+
+    // AFSC collapsible sections
+    document.querySelectorAll('.afsc-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const isOpen = content.style.display === 'block';
+        document.querySelectorAll('.afsc-content').forEach(c => c.style.display = 'none');
+        document.querySelectorAll('.afsc-header span').forEach(s => s.textContent = '+');
+        if (!isOpen) {
+          content.style.display = 'block';
+          header.querySelector('span').textContent = '−';
+        }
+      });
+    });
+
+    // FAQ logic
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        const open = answer.style.display === 'block';
+        q.parentElement.parentElement.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+        q.parentElement.parentElement.querySelectorAll('.faq-question span').forEach(s => s.textContent = '+');
+        if (!open) {
+          answer.style.display = 'block';
+          q.querySelector('span').textContent = '−';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

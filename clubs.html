@@ -29,7 +29,6 @@
     <!-- Text -->
         <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
         <nav class="top-nav">
-          <a href="home.html" target="_blank">HOME</a>
            <a href="weekly_folders.html" target="_blank">WEEKLY FOLDERS</a>
 
             <!-- Resources dropdown -->
@@ -179,20 +178,21 @@
        <!-- Club 6 -->
     <div class="club-card">
       <div class="club-image">
-        <img src="assets/ibarraandsim.JPG" alt="Honor Guard" />
+        <img src="assets/honorguard_club.png" alt="Honor Guard" />
       </div>
       <div class="club-info">
         <div class="club-header">
           <div>
             <h3>HONOR GUARD</h3>
-            <p class="contact">Contact(s): <span>xxx</span></p>
+            <p class="contact">Contact(s): <span> Commander - C/Talamantez | Deputy Commander - C/Valadez</span></p>
           </div>
           <button class="dropdown-btn">▼</button>
         </div>
         <div class="club-details">
-          <p><strong>Mission:</strong>xxx</p>
-          <p><strong>Candidacy:</strong> xxx</p>
-          <p><strong>Meeting Times:</strong> xxx</p>
+          <p><strong>Mission: </strong> Ensure the preservation of Air Force & Space Force heritage through training,
+            adherence to standards, and promotion of traditions. Come to practice, take the test, and be a part of Honor Guard! </p>
+          <p><strong></strong> </p>
+          <p><strong>Meeting Times:</strong> Monday and Wednesday 1430-1530, Friday 1300-1400</p>
         </div>
       </div>
     </div>
@@ -244,5 +244,32 @@
       }
     });
   </script>
+
+<!-- dropdown script -->
+<script>
+const ResourcesButton = document.getElementById('Resources-button');
+const ResourcesMenu = document.getElementById('Resources-submenu');
+
+// Toggle visibility for each dropdown
+pocButton.addEventListener('click', () => {
+  pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
+  ResourcesMenu.style.display = 'none'; // close other menu if open
+});
+
+ResourcesButton.addEventListener('click', () => {
+  ResourcesMenu.style.display = ResourcesMenu.style.display === 'block' ? 'none' : 'block';
+  pocMenu.style.display = 'none'; // close other menu if open
+});
+
+// Close both menus if clicking outside
+document.addEventListener('click', (e) => {
+  if (!document.getElementById('poc-access').contains(e.target) &&
+      !document.getElementById('Resources-access').contains(e.target)) {
+    pocMenu.style.display = 'none';
+    ResourcesMenu.style.display = 'none';
+  }
+});
+</script>
+
 </body>
 </html>

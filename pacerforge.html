@@ -29,7 +29,6 @@
     <!-- Text -->
         <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
         <nav class="top-nav">
-            <a href="home.html" target="_blank">HOME</a>
            <a href="weekly_folders.html" target="_blank">WEEKLY FOLDERS</a>
 
             <!-- Resources dropdown -->
@@ -111,3 +110,30 @@
   </script>
 </body>
 </html>
+
+<!-- dropdown script -->
+<script>
+const pocMenu = document.getElementById('poc-submenu');
+const ResourcesButton = document.getElementById('Resources-button');
+const ResourcesMenu = document.getElementById('Resources-submenu');
+
+// Toggle visibility for each dropdown
+pocButton.addEventListener('click', () => {
+  pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
+  ResourcesMenu.style.display = 'none'; // close other menu if open
+});
+
+ResourcesButton.addEventListener('click', () => {
+  ResourcesMenu.style.display = ResourcesMenu.style.display === 'block' ? 'none' : 'block';
+  pocMenu.style.display = 'none'; // close other menu if open
+});
+
+// Close both menus if clicking outside
+document.addEventListener('click', (e) => {
+  if (!document.getElementById('poc-access').contains(e.target) &&
+      !document.getElementById('Resources-access').contains(e.target)) {
+    pocMenu.style.display = 'none';
+    ResourcesMenu.style.display = 'none';
+  }
+});
+</script>

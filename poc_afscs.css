@@ -24,6 +24,7 @@ body {
 .filter-btn {
   background-color: #00308F;
   color: white;
+  font-family: 'Orbitron', sans-serif;
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
@@ -64,7 +65,7 @@ body {
   width: 100%;
   background: #00308F;
   color: white;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   padding: 1rem 1.5rem;
   cursor: pointer;
@@ -97,15 +98,16 @@ body {
   padding: 1.5rem;
 }
 
-/* AFSC image styling */
+/* AFSC image styling — uniform size */
 .afsc-image {
-  width: 40%;
-  max-width: 320px;
-  height: auto;
+  width: 320px;              /* fixed width for consistency */
+  height: 220px;             /* fixed height for all images */
+  object-fit: cover;         /* ensures images fill the box  */
   border-radius: 10px;
-  object-fit: cover;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;            /* prevents resizing when layout wraps */
 }
+
 
 /* Cadet list styling */
 .cadet-list {
@@ -147,8 +149,8 @@ body {
   }
 
   .afsc-image {
-    width: 80%;
-    max-width: 350px;
+    width: 100%;
+    height: 200px;
   }
 
   .cadet-list {
@@ -193,6 +195,36 @@ body {
   padding: 0 1rem 1rem;
   color: #333;
 }
+
+/* But remove background for Learn More button container */
+.faq-item:has(.learn-more-btn) {
+  background: none;
+  box-shadow: none;
+  text-align: left;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #00308F, #007bff);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 48, 143, 0.3);
+}
+
+.learn-more-btn:hover {
+  background: linear-gradient(135deg, #005bbb, #00308F);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 48, 143, 0.4);
+}
+
 
 /* Links Section */
 .links-section {

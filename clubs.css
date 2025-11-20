@@ -132,3 +132,20 @@ body {
 .club-details p {
   margin: 10px 0;
 }
+
+/* Club details start hidden */
+.club-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  /* Smooth animation */
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+/* When card is open */
+.club-card.open .club-details {
+  opacity: 1;
+}
+
+

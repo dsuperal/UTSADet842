@@ -67,6 +67,7 @@
         </nav>
     </header>
 
+
   <!-- Main Club Section -->
   <section class="clubs-section">
     <!-- Club 1 -->
@@ -207,6 +208,41 @@
 
   <footer> <p>© 2025 Detachment 842 | University of Texas at San Antonio</p> </footer>
 
+ <!-- JS -->
+  <script>
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.club-card');
+        const details = card.querySelector('.club-details');
+        const isOpen = card.classList.contains('open');
+
+        // Close all other cards first
+        document.querySelectorAll('.club-card.open').forEach(openCard => {
+          if (openCard !== card) {
+            openCard.classList.remove('open');
+            const openDetails = openCard.querySelector('.club-details');
+            openDetails.style.maxHeight = '0';
+            openDetails.style.opacity = '0';
+          }
+        });
+
+        if (isOpen) {
+          // Close this one
+          card.classList.remove('open');
+          details.style.maxHeight = '0';
+          details.style.opacity = '0';
+        } else {
+          // Open this one
+          card.classList.add('open');
+          details.style.maxHeight = details.scrollHeight + 'px';
+          details.style.opacity = '1';
+        }
+      });
+    });
+
+  </script>
 <!-- dropdown script -->
 <script>
 const pocButton = document.getElementById('poc-button');

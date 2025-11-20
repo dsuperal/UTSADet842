@@ -395,6 +395,19 @@ body {
   box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
 }
 
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
 /* Footer */
 footer {
   background-color: #00308F;

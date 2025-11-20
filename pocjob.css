@@ -1,3 +1,4 @@
+/* --------- GENERAL --------- */
 body {
   background-color: #f8f9fa;
   margin: 0;
@@ -5,32 +6,63 @@ body {
   color: #002855;
 }
 
-.page-title {
-  text-align: center;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
-  color: #000000;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-.dropdown-section {
+/* --------- TABS --------- */
+.semester-tabs {
   max-width: 700px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  margin: 2rem auto;
+  text-align: center;
 }
 
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.7rem 1.4rem;
+  font-family: 'Orbitron', sans-serif;
+  background-color: white;
+  border: 1px solid #b0c4de;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #004aad;
+  transition: 0.3s;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.tab-btn:hover {
+  background-color: #eaf3ff;
+}
+
+.tab-btn.active {
+  background-color: #004aad;
+  color: white;
+  border-color: #003b8e;
+}
+
+/* --------- TAB CONTENT --------- */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* --------- DROPDOWN BOX --------- */
 .dropdown {
   border: 1px solid #b0c4de;
   border-radius: 12px;
   background-color: white;
   overflow: hidden;
+  margin-bottom: 1.5rem;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Dropdown Label (Trigger) */
+/* --------- TRIGGER TITLE --------- */
 .trigger {
   cursor: pointer;
   font-family: 'Orbitron', sans-serif;
@@ -41,7 +73,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
 .trigger:hover {
@@ -60,22 +92,47 @@ input:checked + .trigger::after {
   transform: rotate(-180deg);
 }
 
-/* Dropdown Content */
-.list {
+/* --------- NESTED CONTENT (Drive Link + Jobs) --------- */
+.nested-section {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
   background-color: white;
+  border-top: 1px solid #b0c4de;
+  padding-left: 1.2rem;
 }
 
-input:checked ~ .list {
-  max-height: 500px;
-  border-top: 1px solid #b0c4de;
+input:checked + .trigger + .nested-section {
+  max-height: 600px;
+  padding: 1rem 1.2rem;
+}
+
+/* Google Drive Link */
+.nested-section a {
+  color: #004aad;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.nested-section a:hover {
+  color: #001f5b;
+}
+
+/* Job list */
+.list {
+  margin: 0;
+  padding-left: 1rem;
 }
 
 .list li {
   list-style: none;
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -83,21 +140,17 @@ input:checked ~ .list {
   border-bottom: none;
 }
 
-.list a {
-  color: #004aad;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.95rem;
-  transition: color 0.2s;
-}
-
-.list a:hover {
-  color: #001f5b;
-}
-
 /* Hidden checkbox */
 .sr-only {
   position: absolute;
   opacity: 0;
   pointer-events: none;
+}
+
+/* Coming soon */
+.coming-soon {
+  text-align: center;
+  color: #444;
+  margin-top: 1rem;
+  font-style: italic;
 }

@@ -108,6 +108,20 @@ body {
   flex-shrink: 0;            /* prevents resizing when layout wraps */
 }
 
+/* Container for image + caption inside AFSC flex layout */
+.afsc-img-container {
+  display: flex;
+  flex-direction: column; /* stack image and caption */
+  align-items: center;    /* center under the image */
+  gap: 0.3rem;            /* space between image and caption */
+}
+.afsc-img-caption {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 
 /* Cadet list styling */
 .cadet-list {

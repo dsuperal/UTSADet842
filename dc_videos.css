@@ -36,10 +36,10 @@
 
 .contact-info {
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;           /* Smaller font */
+  font-size: .95rem;           /* Smaller font */
   color: #333;
   text-align: center;
-  /* font-style: italic; */
+  font-style: italic;
 }
 
 

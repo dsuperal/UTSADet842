@@ -2,37 +2,37 @@
    General reset
 ========================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ==========================
    Body and fonts
 ========================== */
 body {
-    background-color: white;
-    color: #00308F;
-    font-family: 'Orbitron', sans-serif;
+  background-color: white;
+  color: #00308F;
+  font-family: 'Orbitron', sans-serif;
 }
 
 /* ==========================
  Header
 ========================== */
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: white;
-    border-bottom: 2px solid #00308F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 2px solid #00308F;
 }
 
 /* Logos */
 .header-logo {
-    height: 90px;
-    width: auto;
-    max-width: 100%;
+  height: 90px;
+  width: auto;
+  max-width: 100%;
 }
 
 /* Header text */
@@ -41,7 +41,8 @@ body {
   font-size: 1.5rem;
   color: #00308F;
   font-weight: bold;
-  margin: 0 auto; /* centers horizontally */
+  margin: 0 auto;
+  /* centers horizontally */
 }
 
 
@@ -50,8 +51,8 @@ body {
    Navigation
 ========================== */
 .top-nav {
-    display: flex;
-    gap: 25px;
+  display: flex;
+  gap: 25px;
 }
 
 /* Header Navigation Font Fix */
@@ -60,7 +61,8 @@ body {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #00308F; /* Air Force blue */
+  color: #00308F;
+  /* Air Force blue */
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -68,11 +70,13 @@ body {
 
 .top-nav a:hover,
 .top-nav button.nav:hover {
-  color: #E27D3C; /* Accent orange from site palette */
+  color: #E27D3C;
+  /* Accent orange from site palette */
 }
 
 .top-nav a.active {
-  color: #E27D3C; /* highlight the current page */
+  color: #E27D3C;
+  /* highlight the current page */
 }
 
 
@@ -80,107 +84,104 @@ body {
 
 /* General nav item container */
 .nav-item {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Shared dropdown button styles (POC + Resources) */
 #poc-button,
 #Resources-button {
-    background: transparent;
-    border: none;
-    color: #00308F;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1rem;
-    padding: 0;
-    transition: color 0.3s ease;
+  background: transparent;
+  border: none;
+  color: #00308F;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  padding: 0;
+  transition: color 0.3s ease;
 }
 
 #poc-button:hover,
 #Resources-button:hover {
-    color: #005bbb;
+  color: #005bbb;
 }
 
 /* Shared submenu container styles */
 #poc-submenu,
 #Resources-submenu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    z-index: 1000;
-    min-width: 180px;
-    flex-direction: column;
-    padding: 5px 0;
-    border-radius: 6px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 180px;
+  flex-direction: column;
+  padding: 5px 0;
+  border-radius: 6px;
 }
 
 /* Individual submenu items */
 .submenu-item {
-    padding: 8px 12px;
+  padding: 8px 12px;
 }
 
 /* Submenu links */
 .submenu-link {
-    color: #00308F;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    display: block;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  color: #00308F;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .submenu-link:hover {
-    background-color: #e5e5e5;
-    color: #001f66;
+  background-color: #e5e5e5;
+  color: #001f66;
 }
 
 /* Ensure dropdown arrow spacing */
 .nav-item button::after {
-    content: "";
-    margin-left: 5px;
+  content: "";
+  margin-left: 5px;
 }
 
 /* Optional: make dropdowns align neatly below the buttons */
 .nav-item {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /* ==========================
-   Carousel
+   IMAGE CAROUSEL
 ========================== */
-.carousel-container {
-    position: relative;
-    width: 100%;
-    margin: 10px auto;
-    overflow: hidden;
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
 }
 
-.carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
-
-.carousel-item {
-    min-width: 100%;
-    position: relative;
-    text-align: center;
+.carousel .carousel-item {
+  min-width: 100%;
+  position: relative;
+  text-align: center;
 }
 
-/* Keep original height on desktop */
 .carousel-item img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  display: inline-block;
 }
 
-/* Carousel text overlay */
 .carousel-text {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
@@ -189,51 +190,10 @@ body {
   letter-spacing: 1px;
 }
 
-/* Carousel buttons */
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    font-size: 2rem;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 2;
-    border-radius: 5px;
+.callout {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
-/* ==========================
-   Carousel Indicators
-========================== */
-.carousel-indicators {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 6;
-}
-
-.carousel-indicators div {
-    width: 12px;
-    height: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.carousel-indicators div.active {
-    background-color: white;
-    transform: scale(1.2);
-}
-
-
-.prev { left: 10px; }
-.next { right: 10px; }
 
 /* ==========================
    DET 842 OPPORTUNITIES
@@ -246,14 +206,16 @@ body {
 
 .det-news-header {
   font-family: 'Orbitron', sans-serif;
-  color: #00308F; /* Air Force blue */
+  color: #00308F;
+  /* Air Force blue */
   font-size: 2rem;
   margin-bottom: 50px;
 }
 
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* exactly 3 per row */
+  grid-template-columns: repeat(3, 1fr);
+  /* exactly 3 per row */
   gap: 20px;
   width: 85%;
   margin: 0 auto;
@@ -269,7 +231,8 @@ body {
   cursor: pointer;
   width: 100%;
   max-width: 400px;
-  aspect-ratio: 4 / 3; /* Keeps all cards the same proportion */
+  aspect-ratio: 4 / 3;
+  /* Keeps all cards the same proportion */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -278,7 +241,8 @@ body {
 .news-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Crop without stretching */
+  object-fit: cover;
+  /* Crop without stretching */
   border-radius: 12px;
   display: block;
 }
@@ -292,7 +256,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   text-transform: uppercase;
   padding: 12px;
@@ -306,51 +270,54 @@ body {
    Info Sections
 ========================== */
 .info-sections {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
-.info-item { background-color: white; }
+.info-item {
+  background-color: white;
+}
 
 .info-header {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.5rem;
-    color: #00308F;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: #00308F;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .info-header::after {
-    content: "";
-    display: block;
-    width: 60%;
-    height: 3px;
-    background-color: #00308F;
-    margin: 8px auto 0;
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: #00308F;
+  margin: 8px auto 0;
 }
 
 .info-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    color: #00308F;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #00308F;
 }
 
-.info-list li { 
-  margin-bottom: 10px; 
+.info-list li {
+  margin-bottom: 10px;
 }
 
 /* CONNECT SECTION */
 .connect-section {
-  background-color: #00308F; /* light gray */
+  background-color: #00308F;
+  /* light gray */
   padding: 50px 10%;
   display: flex;
   justify-content: center;
@@ -362,7 +329,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* allows stacking on mobile */
+  flex-wrap: wrap;
+  /* allows stacking on mobile */
   width: 100%;
   max-width: 1200px;
 }
@@ -416,7 +384,7 @@ body {
   width: 250px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .social-links a {
@@ -464,29 +432,60 @@ footer {
 
 /* Tablets / small screens */
 @media (max-width: 768px) {
-    /* Stack header */
-    .main-header { flex-direction: column; align-items: center; }
-    .logo-text { font-size: 1.5rem; margin: 10px 0; text-align: center; }
 
-    /* Nav wrap */
-    .top-nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        width: 100%;
-    }
+  /* Stack header */
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /* News and info sections stack */
-    .news-grid { grid-template-columns: 1fr; }
-    .info-sections { grid-template-columns: 1fr; gap: 30px; }
+  .logo-text {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: center;
+  }
 
-    /* Carousel scales on smaller screens */
-    .carousel-item img { height: auto; }
+  /* Nav wrap */
+  .top-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* News and info sections stack */
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-sections {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  /* Carousel scales on smaller screens */
+  .carousel-item img {
+    height: auto;
+  }
 }
 
 /* Small phones */
 @media (max-width: 480px) {
-    .top-nav a, .nav-item { flex: 1 1 100%; margin: 5px 0; text-align: center; }
-    #poc-submenu { width: 100%; box-sizing: border-box; }
-    .carousel-text { font-size: 1rem; padding: 6px 10px; }
+
+  .top-nav a,
+  .nav-item {
+    flex: 1 1 100%;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  #poc-submenu {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-text {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
 }

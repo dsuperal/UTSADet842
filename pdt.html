@@ -13,60 +13,51 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/css/pdt.css">
-  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Javascript -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-
 </head>
 
 <body>
   <!-- ================= NAV BAR ================= -->
-  <!-- Header -->
-  <header class="main-header">
-    <!-- Logos -->
-    <img src="assets/images/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
-    <img src="assets/images/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
-    <a href="index.html">
-      <img src="assets/images/detlogo.png" alt="DET Logo" class="header-logo">
-    </a>
-    <!-- Text -->
-    <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
-    <nav class="top-nav">
-      <!-- <a href="weekly_folders.html" target="_blank">WEEKLY FOLDERS</a> -->
-      <a href="index.html" target="_self">HOME</a>
-      <!-- Resources dropdown -->
-      <div class="nav-item" id="Resources-access">
-        <button class="nav" id="Resources-button">RESOURCES ▾</button>
-        <div class="submenu" id="Resources-submenu" style="display: none;">
-          <div class="submenu-item">
-            <a href="materials.html" class="submenu-link">MATERIALS</a>
-          </div>
-          <div class="submenu-item">
-            <a href="dc_videos.html" class="submenu-link">D&C VIDEOS</a>
-          </div>
-          <div class="submenu-item">
-            <a href="poc_afscs.html" class="submenu-link">POC AFSCs</a>
-          </div>
-          <div class="submenu-item">
-            <a href="clubs.html" class="submenu-link">CLUBS</a>
-          </div>
-        </div>
+  <nav class="navbar navbar-expand-lg sticky-top" aria-label="Fifth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/detlogo.png" class="header-logo">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar" style="">
+        <a class="nav-title me-auto" href="index.html">UT SAN ANTONIO DETACHMENT 842</a>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">Resources</a>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+              <li><a class="dropdown-item" href="materials.html">Materials</a></li>
+              <li><a class="dropdown-item" href="dc_videos.html">D&C Videos</a></li>
+              <li><a class="dropdown-item" href="poc_afscs.html">POC AFSCs</a></li>
+              <li><a class="dropdown-item" href="clubs.html">Extracurriculars</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">POC Access</a>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+              <li><a class="dropdown-item" href="poc_login.html?target=pdt.html">PDT Continuity</a></li>
+              <li><a class="dropdown-item" href="poc_login.html?target=pocjob.html">POC Job Continuity</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Command Staff Log-In</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <!-- POC ACCESS dropdown -->
-      <div class="nav-item" id="poc-access">
-        <button class="nav" id="poc-button">POC ACCESS ▾</button>
-        <div class="submenu" id="poc-submenu" style="display: none;">
-          <div class="submenu-item">
-            <a href="poc_login.html?target=pdt.html" class="submenu-link">PDT CONTINUITY</a>
-          </div>
-          <div class="submenu-item">
-            <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- ================= Container ================= -->
   <div class="box">
@@ -183,35 +174,6 @@
       </div>
     </a>
 
-
-    <!-- dropdown script -->
-    <script>
-      const pocButton = document.getElementById('poc-button');
-      const pocMenu = document.getElementById('poc-submenu');
-      const ResourcesButton = document.getElementById('Resources-button');
-      const ResourcesMenu = document.getElementById('Resources-submenu');
-
-      // Toggle visibility for each dropdown
-      pocButton.addEventListener('click', () => {
-        pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
-        ResourcesMenu.style.display = 'none'; // close other menu if open
-      });
-
-      ResourcesButton.addEventListener('click', () => {
-        ResourcesMenu.style.display = ResourcesMenu.style.display === 'block' ? 'none' : 'block';
-        pocMenu.style.display = 'none'; // close other menu if open
-      });
-
-      // Close both menus if clicking outside
-      document.addEventListener('click', (e) => {
-        if (!document.getElementById('poc-access').contains(e.target) &&
-          !document.getElementById('Resources-access').contains(e.target)) {
-          pocMenu.style.display = 'none';
-          ResourcesMenu.style.display = 'none';
-        }
-      });
-    </script>
-
     <script>
       // Dropdown toggle functionality
       document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
@@ -238,6 +200,7 @@
       });
     </script>
 
+  </div>
+</body>
 
-
-    <nav class="top-nav">
+</html>

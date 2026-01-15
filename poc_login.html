@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detachment 842 Login</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="assets/css/home.css">
 
   <style>
     body {
@@ -19,30 +20,31 @@
     /* ==========================
  Header
 ========================== */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: white;
-    border-bottom: 2px solid #00308F;
-}
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: white;
+      border-bottom: 2px solid #00308F;
+    }
 
-/* Logos */
-.header-logo {
-    height: 90px;
-    width: auto;
-    max-width: 100%;
-}
+    /* Logos */
+    .header-logo {
+      height: 90px;
+      width: auto;
+      max-width: 100%;
+    }
 
-/* Header text */
-.logo-text {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-  color: #00308F;
-  font-weight: bold;
-  margin: 0 auto; /* centers horizontally */
-}
+    /* Header text */
+    .logo-text {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      color: #00308F;
+      font-weight: bold;
+      margin: 0 auto;
+      /* centers horizontally */
+    }
 
     .container {
       display: flex;
@@ -94,62 +96,63 @@
     }
   </style>
 </head>
+
 <body>
 
-   <!-- ================= NAV BAR ================= -->
-    <!-- Header -->
-    <header class="main-header">
+  <!-- ================= NAV BAR ================= -->
+  <!-- Header -->
+  <header class="main-header">
 
 
     <!-- Logos -->
-    <img src="assets/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
-    <img src="assets/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
-          <a href="home.html">
-  <img src="assets/detlogo.png" alt="DET Logo" class="header-logo">
-</a>
+    <img src="assets/images/airforcelogo.jpg" alt="Air Force Logo" class="header-logo">
+    <img src="assets/images/spaceforcedelta.jpg" alt="Space Force Logo" class="header-logo">
+    <a href="home.html">
+      <img src="assets/images/detlogo.png" alt="DET Logo" class="header-logo">
+    </a>
 
     <!-- Text -->
-        <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
-        <nav class="top-nav">
-           <!-- <a href="weekly_folders.html" target="_blank">WEEKLY FOLDERS</a> -->
-            <a href="home.html" target="_blank">HOME</a>
+    <div class="logo-text">UT SAN ANTONIO DETACHMENT 842</div>
+    <nav class="top-nav">
+      <!-- <a href="weekly_folders.html" target="_blank">WEEKLY FOLDERS</a> -->
+      <a href="home.html" target="_blank">HOME</a>
 
-            <!-- Resources dropdown -->
-    <div class="nav-item" id="Resources-access"> 
+      <!-- Resources dropdown -->
+      <div class="nav-item" id="Resources-access">
         <button class="nav" id="Resources-button">RESOURCES ▾</button>
         <div class="submenu" id="Resources-submenu" style="display: none;">
-            <div class="submenu-item">
-                <a href="materials.html" class="submenu-link">MATERIALS</a>
-            </div>
-              <div class="submenu-item">
-                <a href="dc_videos.html" class="submenu-link">D&C VIDEOS</a>
-            </div>
-            <div class="submenu-item">
-                <a href="poc_afscs.html" class="submenu-link">POC AFSCs</a>
-            </div>
-              <div class="submenu-item">
-                <a href="clubs.html" class="submenu-link">CLUBS</a>
-            </div>
+          <div class="submenu-item">
+            <a href="materials.html" class="submenu-link">MATERIALS</a>
+          </div>
+          <div class="submenu-item">
+            <a href="dc_videos.html" class="submenu-link">D&C VIDEOS</a>
+          </div>
+          <div class="submenu-item">
+            <a href="poc_afscs.html" class="submenu-link">POC AFSCs</a>
+          </div>
+          <div class="submenu-item">
+            <a href="clubs.html" class="submenu-link">CLUBS</a>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- POC ACCESS dropdown -->
-         <div class="nav-item" id="poc-access">
-    <button class="nav" id="poc-button">POC ACCESS ▾</button>
-    <div class="submenu" id="poc-submenu" style="display: none;">
-        <div class="submenu-item">
+      <!-- POC ACCESS dropdown -->
+      <div class="nav-item" id="poc-access">
+        <button class="nav" id="poc-button">POC ACCESS ▾</button>
+        <div class="submenu" id="poc-submenu" style="display: none;">
+          <div class="submenu-item">
             <a href="poc_login.html?target=pdt.html" class="submenu-link">PDT CONTINUITY</a>
-        </div>
-        <div class="submenu-item">
+          </div>
+          <div class="submenu-item">
             <a href="poc_login.html?target=pocjob.html" class="submenu-link">POC JOB CONTINUITY</a>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-        </nav>
-    </header>
+    </nav>
+  </header>
 
-   <!-- ================= Container ================= -->  
+  <!-- ================= Container ================= -->
   <div class="container">
     <div class="form_area">
       <h1>POC ACCESS</h1>
@@ -159,7 +162,7 @@
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       const submit = document.getElementById("submit");
       const password = document.getElementById("password");
 
@@ -167,7 +170,7 @@
       const params = new URLSearchParams(window.location.search);
       const target = params.get("target") || "home.html";
 
-      submit.addEventListener("click", function() {
+      submit.addEventListener("click", function () {
         const entered = password.value.trim();
         const CORRECT_PASSWORD = "godfather"; // <-- change this to your real password
 
@@ -180,34 +183,35 @@
     });
   </script>
 
-<!-- dropdown script -->
-<script>
-const pocButton = document.getElementById('poc-button');
-const pocMenu = document.getElementById('poc-submenu');
-const ResourcesButton = document.getElementById('Resources-button');
-const ResourcesMenu = document.getElementById('Resources-submenu');
+  <!-- dropdown script -->
+  <script>
+    const pocButton = document.getElementById('poc-button');
+    const pocMenu = document.getElementById('poc-submenu');
+    const ResourcesButton = document.getElementById('Resources-button');
+    const ResourcesMenu = document.getElementById('Resources-submenu');
 
-// Toggle visibility for each dropdown
-pocButton.addEventListener('click', () => {
-  pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
-  ResourcesMenu.style.display = 'none'; // close other menu if open
-});
+    // Toggle visibility for each dropdown
+    pocButton.addEventListener('click', () => {
+      pocMenu.style.display = pocMenu.style.display === 'block' ? 'none' : 'block';
+      ResourcesMenu.style.display = 'none'; // close other menu if open
+    });
 
-ResourcesButton.addEventListener('click', () => {
-  ResourcesMenu.style.display = ResourcesMenu.style.display === 'block' ? 'none' : 'block';
-  pocMenu.style.display = 'none'; // close other menu if open
-});
+    ResourcesButton.addEventListener('click', () => {
+      ResourcesMenu.style.display = ResourcesMenu.style.display === 'block' ? 'none' : 'block';
+      pocMenu.style.display = 'none'; // close other menu if open
+    });
 
-// Close both menus if clicking outside
-document.addEventListener('click', (e) => {
-  if (!document.getElementById('poc-access').contains(e.target) &&
-      !document.getElementById('Resources-access').contains(e.target)) {
-    pocMenu.style.display = 'none';
-    ResourcesMenu.style.display = 'none';
-  }
-});
-</script>
+    // Close both menus if clicking outside
+    document.addEventListener('click', (e) => {
+      if (!document.getElementById('poc-access').contains(e.target) &&
+        !document.getElementById('Resources-access').contains(e.target)) {
+        pocMenu.style.display = 'none';
+        ResourcesMenu.style.display = 'none';
+      }
+    });
+  </script>
 
 
 </body>
+
 </html>

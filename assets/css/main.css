@@ -187,6 +187,7 @@ body {
   object-fit: cover;
   border-radius: 12px;
   display: block;
+  transform: scale(1.05);
 }
 
 .card-text {

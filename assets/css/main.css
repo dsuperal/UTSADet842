@@ -11,11 +11,6 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-section {
-  text-align: center;
-  padding: 40px 0px;
-}
-
 /* start page container */
 @media (min-width: 768px) {
   .container {
@@ -56,6 +51,14 @@ section {
 .navbar .nav-title {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
+  color: #00308F !important;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+.navbar .nav-title-sm {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
   color: #00308F !important;
   font-weight: bold;
   text-decoration: none !important;
@@ -153,6 +156,11 @@ section {
 }
 
 /* Det Opportunities */
+.det-news {
+  text-align: center;
+  padding: 40px 0px;
+}
+
 .det-news .header {
   font-size: 2rem;
   margin-bottom: 50px;

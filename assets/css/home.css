@@ -1,160 +1,109 @@
-/* ==========================
-   General reset
-========================== */
+/* General Site Settings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ==========================
-   Body and fonts
-========================== */
 body {
   background-color: white;
   color: #00308F;
   font-family: 'Orbitron', sans-serif;
 }
 
-/* ==========================
- Header
-========================== */
-.main-header {
+/* start page container */
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+/* end page container */
+
+/* Navigation Bar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: white;
-  border-bottom: 2px solid #00308F;
+  padding: 10px 20px;
+  background-color: white !important;
+  border-bottom: 1px solid #00308F;
 }
 
-/* Logos */
-.header-logo {
-  height: 90px;
+.navbar img {
+  height: 50px;
   width: auto;
   max-width: 100%;
 }
 
-/* Header text */
-.logo-text {
+.navbar .nav-title {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
-  color: #00308F;
+  color: #00308F !important;
   font-weight: bold;
-  margin: 0 auto;
-  /* centers horizontally */
+  text-decoration: none !important;
 }
 
-
-
-/* ==========================
-   Navigation
-========================== */
-.top-nav {
-  display: flex;
-  gap: 25px;
-}
-
-/* Header Navigation Font Fix */
-.top-nav a,
-.top-nav button.nav {
+.navbar a {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   color: #00308F;
-  /* Air Force blue */
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.top-nav a:hover,
-.top-nav button.nav:hover {
+.navbar a:hover {
   color: #E27D3C;
-  /* Accent orange from site palette */
 }
 
-.top-nav a.active {
+/* Overlay */
+.hero {
+  background: url('../images/cadetwing-2025.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+}
+
+.hero img {
+  height: 100px;
+  height: 100px;
+}
+
+.hero h1 {
   color: #E27D3C;
-  /* highlight the current page */
 }
 
-
-/* ===== DROPDOWN MENU STYLES ===== */
-
-/* General nav item container */
-.nav-item {
-  position: relative;
-  display: inline-block;
-}
-
-/* Shared dropdown button styles (POC + Resources) */
-#poc-button,
-#Resources-button {
-  background: transparent;
-  border: none;
+.hero h2 {
   color: #00308F;
-  font-weight: bold;
-  cursor: pointer;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1rem;
-  padding: 0;
-  transition: color 0.3s ease;
 }
 
-#poc-button:hover,
-#Resources-button:hover {
-  color: #005bbb;
+/* Divider */
+.divider {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-/* Shared submenu container styles */
-#poc-submenu,
-#Resources-submenu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
-  min-width: 180px;
-  flex-direction: column;
-  padding: 5px 0;
-  border-radius: 6px;
-}
-
-/* Individual submenu items */
-.submenu-item {
-  padding: 8px 12px;
-}
-
-/* Submenu links */
-.submenu-link {
+.divider .fa {
   color: #00308F;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-  display: block;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 60px;
+  margin-bottom: 10px;
 }
 
-.submenu-link:hover {
-  background-color: #e5e5e5;
-  color: #001f66;
-}
-
-/* Ensure dropdown arrow spacing */
-.nav-item button::after {
-  content: "";
-  margin-left: 5px;
-}
-
-/* Optional: make dropdowns align neatly below the buttons */
-.nav-item {
-  vertical-align: middle;
-}
-
-/* ==========================
-   IMAGE CAROUSEL
-========================== */
+/* Image Carousel */
 .carousel {
   position: relative;
   width: 100%;
@@ -162,17 +111,17 @@ body {
   overflow: hidden;
 }
 
-.carousel .carousel-item {
+.carousel-item {
   min-width: 100%;
   position: relative;
   text-align: center;
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 800px;
+  width: 100vw;
+  height: 90vh;
   object-fit: cover;
-  display: inline-block;
+  display:inline-block;
 }
 
 .carousel-text {
@@ -195,9 +144,7 @@ body {
   padding-bottom: 20px;
 }
 
-/* ==========================
-   DET 842 OPPORTUNITIES
-========================== */
+/* DET 842 OPPORTUNITIES */
 .det-news {
   text-align: center;
   padding: 40px 0;
@@ -238,12 +185,12 @@ body {
   justify-content: flex-end;
 }
 
-.news-item img {
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   /* Crop without stretching */
-  border-radius: 12px;
+  /* border-radius: 12px; */
   display: block;
 }
 
@@ -266,9 +213,7 @@ body {
   border-bottom-right-radius: 12px;
 }
 
-/* ==========================
-   Info Sections
-========================== */
+/* Info Sections */
 .info-sections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -348,8 +293,6 @@ body {
   position: relative;
 }
 
-
-
 .social-links {
   list-style: none;
   padding: 0;
@@ -407,85 +350,4 @@ footer {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   padding: 1rem 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .connect-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .connect-left h2::after {
-    margin: 8px auto 0;
-  }
-
-  .connect-right {
-    margin-top: 20px;
-  }
-}
-
-
-/* ==========================
-   Mobile Responsiveness
-========================== */
-
-/* Tablets / small screens */
-@media (max-width: 768px) {
-
-  /* Stack header */
-  .main-header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo-text {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  /* Nav wrap */
-  .top-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-  }
-
-  /* News and info sections stack */
-  .news-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .info-sections {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  /* Carousel scales on smaller screens */
-  .carousel-item img {
-    height: auto;
-  }
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-
-  .top-nav a,
-  .nav-item {
-    flex: 1 1 100%;
-    margin: 5px 0;
-    text-align: center;
-  }
-
-  #poc-submenu {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .carousel-text {
-    font-size: 1rem;
-    padding: 6px 10px;
-  }
 }

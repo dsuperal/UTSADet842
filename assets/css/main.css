@@ -196,7 +196,8 @@ body {
   bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.75);
-  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }

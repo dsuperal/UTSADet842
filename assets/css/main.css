@@ -12,6 +12,12 @@ body {
 }
 
 /* start page container */
+@media (max-width: 576px) {
+  .container {
+    width: 400px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 700px;
@@ -200,6 +206,28 @@ body {
   padding-bottom: 12px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+}
+
+.card-text p {
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  /* .news-link {
+    max-width: 150px;
+  } */
+
+  .card-text {
+    height: 100%;
+  }
+
+  .card-text p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 }
 
 .card-img-overlay {

@@ -16,6 +16,7 @@
 
   <!-- Javascript -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/navbar_handler.js"></script>
 </head>
 
 <body>
@@ -32,30 +33,7 @@
       </button>
       <div class="navbar-collapse collapse" id="navbar" style="">
         <a class="nav-title me-auto d-none d-lg-block" href="index.html">UT SAN ANTONIO DETACHMENT 842</a>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">Resources</a>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><a class="dropdown-item" href="materials.html">Materials</a></li>
-              <li><a class="dropdown-item" href="dc_videos.html">D&C Videos</a></li>
-              <li><a class="dropdown-item" href="afscs.html">POC AFSCs</a></li>
-              <li><a class="dropdown-item" href="clubs.html">Extracurriculars</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">POC Access</a>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><a class="dropdown-item" href="poc_login.html?target=poc_resources.html">POC Resources</a></li>
-              <li><a class="dropdown-item" href="poc_login.html?target=poc_pdt.html">PDT Continuity</a></li>
-              <li><a class="dropdown-item" href="poc_login.html?target=poc_job.html">POC Job Continuity</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Command Staff Log-In</a></li>
-            </ul>
-          </li>
-        </ul>
+        <ul id="navbar-dropdown" class="navbar-nav mb-2 mb-lg-0"></ul>
       </div>
     </div>
   </nav>
@@ -104,7 +82,7 @@
       <div class="carousel-item">
         <img src="assets/images/home-carousel/prpractice24.JPG" class="d-block w-100">
         <div class="carousel-text">
-          <strong>PASS & REVIEW</strong><br>
+          <strong>PASS IN REVIEW</strong><br>
           FALL 2024
         </div>
       </div>
@@ -202,10 +180,6 @@
                 target="_blank">ABSENCE FORM</a>
             </li>
             <li>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGWzCRyCRpg4Q3GAIuLBeeLwx6gqU9otqPnaM9HYyrFoRVCQ/viewform"
-                target="_blank">IG SUBMISSION FORM</a>
-            </li>
-            <li>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSccCAN9Z028bQkBDWlCVoTtrkwzxf2VwM1EQ7GggT23MYc5kA/viewform"
                 target="_blank">MENTAL HEALTH CHECK FORM</a>
             </li>
@@ -229,17 +203,9 @@
           </ul>
         </div>
         <div class="col-md">
-          <h3 class="info-header">UPCOMMING EVENTS</h3>
+          <h3 class="info-header">UPCOMING EVENTS</h3>
           <table class="table table-borderless events-table" style="font-family: 'Roboto', sans-serif">
             <tbody>
-              <tr>
-                <td>FIRST DAY OF SPRING SEMESTER</td>
-                <td>20 JAN</td>
-              </tr>
-              <tr>
-                <td>LRCs</td>
-                <td>28 FEB</td>
-              </tr>
               <tr>
                 <td>BATTLE OF THE BOMB</td>
                 <td>7 MAR</td>
@@ -247,6 +213,14 @@
               <tr>
                 <td>WARRIOR CHALLENGE</td>
                 <td>21 MAR</td>
+              </tr>
+              <tr>
+                <td>PACER FORGE</td>
+                <td>18 APR</td>
+              </tr>
+              <tr>
+                <td>AWARDS BANQUET</td>
+                <td>25 APR</td>
               </tr>
             </tbody>
           </table>

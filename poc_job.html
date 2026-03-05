@@ -17,6 +17,7 @@
 
   <!-- Javascript -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/navbar_handler.js"></script>
 </head>
 
 <body>
@@ -33,34 +34,11 @@
       </button>
       <div class="navbar-collapse collapse" id="navbar" style="">
         <a class="nav-title me-auto d-none d-lg-block" href="index.html">UT SAN ANTONIO DETACHMENT 842</a>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">Resources</a>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><a class="dropdown-item" href="materials.html">Materials</a></li>
-              <li><a class="dropdown-item" href="dc_videos.html">D&C Videos</a></li>
-              <li><a class="dropdown-item" href="afscs.html">POC AFSCs</a></li>
-              <li><a class="dropdown-item" href="clubs.html">Extracurriculars</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">POC Access</a>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><a class="dropdown-item" href="poc_login.html?target=poc_resources.html">POC Resources</a></li>
-              <li><a class="dropdown-item" href="poc_login.html?target=poc_pdt.html">PDT Continuity</a></li>
-              <li><a class="dropdown-item" href="poc_login.html?target=poc_job.html">POC Job Continuity</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Command Staff Log-In</a></li>
-            </ul>
-          </li>
-        </ul>
+        <ul id="navbar-dropdown" class="navbar-nav mb-2 mb-lg-0"></ul>
       </div>
     </div>
   </nav>
-
+  
   <!-- Begin Page Content -->
   <!-- ================= SEMESTER TABS ================= -->
   <div class="semester-tabs">
@@ -69,6 +47,7 @@
     <div class="tab-buttons">
       <button class="tab-btn active" data-tab="spring2025">Spring 2025</button>
       <button class="tab-btn" data-tab="fall2025">Fall 2025</button>
+      <button class="tab-btn" data-tab="spring2026">Spring 2026</button>
     </div>
 
     <!-- ================= SPRING 2025 CONTENT ================= -->
@@ -195,6 +174,125 @@
       <!-- Empty for now as requested -->
     </div>
 
+    <!-- ================= SPRING 2026 CONTENT ==================-->
+     <div id="spring2026" class="tab-content">
+
+      <div class="dropdown">
+        <input type="checkbox" id="spring26-cs" class="sr-only">
+        <label for="spring26-cs" class="trigger">Command Staff</label>
+        <div class="nested-section">
+          <a href="#" target="_blank">Google Drive Folder Link</a>
+          <ul class="list">
+            <li>Wing Commander</li>
+            <li>Deputy Wing Commander</li>
+            <li>Inspector General</li>
+            <li>Operations Analysis Flight</li>
+            <li>Teal Rope Officers</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <input type="checkbox" id="spring26-og" class="sr-only">
+        <label for="spring26-og" class="trigger">Operations Group</label>
+        <div class="nested-section">
+          <a href="#" target="_blank">Google Drive Folder Link</a>
+          <ul class="list">
+            <li>Operations Group Commander</li>
+            <li>Physical Training Commander</li>
+            <li>Drill & Ceremonies Commander</li>
+            <li>BC Squadron Commander</li>
+            <li>BCL Squadron Commander</li>
+            <li>Flight Commanders</li>
+            <li>Physical Training Leaders</li>
+            <li>Drill & Ceremonies Leaders</li>
+            <li>Support Training Officers</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <input type="checkbox" id="spring26-mxg" class="sr-only">
+        <label for="spring26-mxg" class="trigger">Maintenance Group</label>
+        <div class="nested-section">
+          <a href="#" target="_blank">Google Drive Folder Link</a>
+          <ul class="list">
+            <li>Maintenance Group Commander</li>
+          </ul>
+          
+          <div class="dropdown" style="margin-top: 10px;">
+            <input type="checkbox" id="spring26-mxg-a58" class="sr-only">
+            <label for="spring26-mxg-a58" class="trigger">A5/8: Planning & Programs</label>
+            <div class="nested-section">
+              <ul class="list">
+                <li>A5/8 Planning & Programs Commander</li>
+                <li>Leadership Laboratory Execution Commander</li>
+                <li>Leadership Laboratory Execution Officers</li>
+                <li>Basic Cadet Leader Leadership Laboratory Execution Commander</li>
+                <li>Basic Cadet Leader Leadership Laboratory Execution Officers</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown" style="margin-top: 10px;">
+            <input type="checkbox" id="spring26-mxg-a4" class="sr-only">
+            <label for="spring26-mxg-a4" class="trigger">A4: Logistics & Assets</label>
+            <div class="nested-section">
+              <ul class="list">
+                <li>A4 Logistics & Assets Commander</li>
+                <li>Force Protection Commander</li>
+                <li>Force Protection Officers</li>
+                <li>Logistic Readiness Commander</li>
+                <li>Logistic Readiness Officers</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <input type="checkbox" id="spring26-msg" class="sr-only">
+        <label for="spring26-msg" class="trigger">Mission Support Group</label>
+        <div class="nested-section">
+          <a href="#" target="_blank">Google Drive Folder Link</a>
+          <ul class="list">
+            <li>Mission Support Group Commander</li>
+          </ul>
+          
+          <div class="dropdown" style="margin-top: 10px;">
+            <input type="checkbox" id="spring26-msg-a67" class="sr-only">
+            <label for="spring26-msg-a67" class="trigger">A6/7: Communications & Outreach</label>
+            <div class="nested-section">
+              <ul class="list">
+                <li>A6/7 Communications & Outreach Commander</li>
+                <li>Public Affairs Flight Commander</li>
+                <li>Public Affairs Officers</li>
+                <li>Detachment Support Officer</li>
+                <li>Flight Simulator Commander</li>
+                <li>Project Warrior Officer</li>
+                <li>Outreach & Recruiting Commander</li>
+                <li>Outreach & Recruiting Officers</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown" style="margin-top: 10px;">
+            <input type="checkbox" id="spring26-msg-a12" class="sr-only">
+            <label for="spring26-msg-a12" class="trigger">A1/2: Personnel & Intel</label>
+            <div class="nested-section">
+              <ul class="list">
+                <li>A1/2 Personnel & Intel Commander</li>
+                <li>Knowledge Operations Officers</li>
+                <li>Personnel Officers</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <!-- TAB SWITCHING SCRIPT -->

@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Home",
+    "url": "index.html",
+    "type": "link"
+  },
+  {
+    "label": "Resources",
+    "type": "dropdown",
+    "items": [
+      {
+        "label": "Materials",
+        "url": "materials.html",
+        "type": "link"
+      },
+      {
+        "label": "D&C Videos",
+        "url": "dc_videos.html",
+        "type": "link"
+      },
+      {
+        "label": "POC AFSCs",
+        "url": "afscs.html",
+        "type": "link"
+      },
+      {
+        "label": "Extracurriculars",
+        "url": "clubs.html",
+        "type": "link"
+      }
+    ]
+  },
+  {
+    "label": "POC Access",
+    "type": "dropdown",
+    "items": [
+      {
+        "label": "POC Resources",
+        "url": "poc_login.html?target=poc_resources.html",
+        "type": "link"
+      },
+      {
+        "label": "PDT Continuity",
+        "url": "poc_login.html?target=poc_pdt.html",
+        "type": "link"
+      },
+      {
+        "label": "POC Job Continuity",
+        "url": "poc_login.html?target=poc_job.html",
+        "type": "link"
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "label": "Command Staff Log-In",
+        "url": "#",
+        "type": "link"
+      }
+    ]
+  }
+]

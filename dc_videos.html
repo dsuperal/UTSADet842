@@ -17,6 +17,7 @@
 
   <!-- Javascript -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/navbar_handler.js"></script>
 </head>
 
 <body>
@@ -33,40 +34,23 @@
       </button>
       <div class="navbar-collapse collapse" id="navbar" style="">
         <a class="nav-title me-auto d-none d-lg-block" href="index.html">UT SAN ANTONIO DETACHMENT 842</a>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">Resources</a>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><a class="dropdown-item" href="materials.html">Materials</a></li>
-              <li><a class="dropdown-item" href="dc_videos.html">D&C Videos</a></li>
-              <li><a class="dropdown-item" href="afscs.html">POC AFSCs</a></li>
-              <li><a class="dropdown-item" href="clubs.html">Extracurriculars</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">POC Access</a>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><a class="dropdown-item" href="poc_login.html?target=poc_resources.html">POC Resources</a></li>
-              <li><a class="dropdown-item" href="poc_login.html?target=poc_pdt.html">PDT Continuity</a></li>
-              <li><a class="dropdown-item" href="poc_login.html?target=poc_job.html">POC Job Continuity</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Command Staff Log-In</a></li>
-            </ul>
-          </li>
-        </ul>
+        <ul id="navbar-dropdown" class="navbar-nav mb-2 mb-lg-0"></ul>
       </div>
     </div>
   </nav>
 
   <!-- Begin Page Content -->
+   <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FS9ZLccuQIk?si=VqNul5k_Tg6q5TBD&controls=0"
+    title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+    <p class="video-caption">Attention and Parade Rest - Demonstration</p>
+  </div>
   <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/NQOAYAvwaCY?si=ojlc3OpHDMHHPXdy&controls=0"
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cIoox_1OBqE?si=zFdpQPJL_23qjFdc&controls=0"
       title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen></iframe>
-    <p class="video-caption">Open Ranks Inspection (ORI) - Instructional Video</p>
+    <p class="video-caption">Left, Right, and About Face - Demonstration</p>
   </div>
   <div class="video-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Sg47nXiIfG0?si=0mu_oISQOcQfqp4W&controls=0"

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/dc_videos.css">
 
+
   <!-- Javascript -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/navbar_handler.js"></script>
@@ -40,35 +41,128 @@
   </nav>
 
   <!-- Begin Page Content -->
-   <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FS9ZLccuQIk?si=VqNul5k_Tg6q5TBD&controls=0"
-    title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen></iframe>
-    <p class="video-caption">Attention and Parade Rest - Demonstration</p>
-  </div>
-  <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cIoox_1OBqE?si=zFdpQPJL_23qjFdc&controls=0"
+  <!-- Table of Contents -->
+<div class="toc-toggle" id="tocToggle">
+    ☰ <span>Menu</span>
+</div>
+
+<nav class="toc-sidebar" id="tocSidebar">
+
+  <button class="toc-close" id="tocClose">
+        &times;
+    </button>
+
+    <div class="toc-title">
+        Menu
+    </div>
+
+    <a href="#all">All</a>
+    <a href="#station">Stationary Movements</a>
+    <!-- <a href="#marching">Marching</a> -->
+    <a href="#procedures">Procedures</a>
+    <a href="#teaching">How to Teach Drill</a>
+
+</nav>
+
+  <!-- Videos -->
+
+  <!-------------------- all ------------------------>
+<section id="all">
+    <h2 class="section-title"> 
+    </h2>
+</section>
+
+<!-------------------- stationary ------------------------>
+<section id="station">
+    <h2 class="section-title">
+        Stationary Movements
+    </h2>
+
+    <div class="video-container">
+        <iframe 
+        src="https://www.youtube.com/embed/FS9ZLccuQIk?si=VqNul5k_Tg6q5TBD&controls=0">
+        </iframe>
+        <p class="video-caption">
+            Attention and Parade Rest - Demonstration
+        </p>
+    </div>
+    <div class="video-container">
+        <iframe 
+        src="https://www.youtube.com/embed/cIoox_1OBqE?si=zFdpQPJL_23qjFdc&controls=0">
+        </iframe>
+        <p class="video-caption">
+            Left, Right, and About Face - Demonstration
+        </p>
+    </div>
+</section>
+
+<!-------------------- Marching Movements------------------------>
+<!-- <section id="marching">
+    <h2 class="section-title">
+        Marching Movements
+    </h2> -->
+
+<!-------------------- procedures ------------------------>
+<section id="procedures">
+    <h2 class="section-title">
+        Procedures
+    </h2>
+
+    <div class="video-container">
+        <iframe 
+        src="https://youtu.be/sVuQmAUTgak?si=IouxpfGw4kai1g3R">
+        </iframe>
+        <p class="video-caption">
+            Flight Drill Evaluation (FDE) - Guidance
+        </p>
+    </div>
+
+    <div class="video-container">
+        <iframe 
+        src="https://youtu.be/NQOAYAvwaCY?si=YqkEFF2rUuFR1Pem">
+        </iframe>
+        <p class="video-caption">
+            Open Ranks Inspection (ORI) - Instructional Video
+        </p>
+    </div>
+
+    <div class="video-container">
+        <iframe 
+        src="https://www.youtube.com/embed/Sg47nXiIfG0?si=0mu_oISQOcQfqp4W&controls=0">
+        </iframe>
+        <p class="video-caption">
+            Dress, Cover, Interval, and Distance (DCID) - Instructional Video
+        </p>
+    </div>
+</section>
+
+<!-------------------- How to teach drill ------------------------>
+<section id="teaching">
+    <h2 class="section-title">
+        How to Teach Drill
+    </h2>
+
+    <div class="video-container">
+    <iframe width="560" height="315" src="https://youtu.be/ZvogzasGvQs?si=eoXEKFTtD7N-zYea"
       title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen></iframe>
-    <p class="video-caption">Left, Right, and About Face - Demonstration</p>
+    <p class="video-caption">Coach Pupil (BMT Method) - Instructional Video</p>
   </div>
-  <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sg47nXiIfG0?si=0mu_oISQOcQfqp4W&controls=0"
-      title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen></iframe>
-    <p class="video-caption">Dress, Cover, Interval, and Distance (DCID) - Instructional Video</p>
-  </div>
+
   <div class="video-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/wf9yCmg5a48?si=5u6xbZbpebj2vpXm"
       title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen></iframe>
     <p class="video-caption">By The Numbers (BTN) - Instructional Video</p>
   </div>
+</section>
+
 
   <footer>
-    <p>© 2025 Detachment 842 | University of Texas at San Antonio</p>
-  </footer>
+  <p>© 2025 Detachment 842 | University of Texas at San Antonio</p>
+</footer>
+
+<script src="assets/js/table_of_contents.js"></script>
 
 </body>
-
 </html>

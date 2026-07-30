@@ -1,0 +1,191 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px 15px;
+      /* background: #00205B; */
+      color: #00308F;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+    }
+
+    .sheet-container {
+      flex: 1;
+      width: 100%;
+      padding: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: calc(100vh - 180px);
+      border: none;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,.15);
+    }
+
+    .edit-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background: #00308F;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: .2s;
+    }
+
+    .edit-button:hover {
+      background: #00205B;
+    }
+
+    .button-container {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    /* ================= WHY VOLUNTEER ================= */
+
+.volunteer-section{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+.volunteer-card{
+    background:white;
+    border-radius:12px;
+    box-shadow:2px 2px 8px #00308F;
+    transition:.3s;
+    display:flex;
+    gap:35px;
+    padding:30px;
+    align-items:center;
+}
+
+.volunteer-card:hover{
+    transform:translateY(-5px);
+    box-shadow:4px 4px 12px #00308F;
+}
+
+/* LEFT */
+.volunteer-text{
+    flex:1;
+}
+
+.volunteer-text h2{
+    color:#00205B;
+    text-transform:uppercase;
+    font-family:'Orbitron', sans-serif;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.volunteer-text p{
+    font-family:'Roboto',sans-serif;
+    line-height:1.8;
+    font-size:1rem;
+    color:#444;
+}
+
+/* RIGHT */
+.volunteer-carousel{
+    position:relative;
+    width:450px;
+    height:300px;
+    border-radius:12px;
+    overflow:hidden;
+    flex-shrink:0;
+}
+
+.slide{
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.slide.active{
+    display:block;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slide-caption{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:rgba(0,0,0,.5);
+    color:white;
+    padding:12px;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-size:.9rem;
+}
+
+/* Buttons */
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:rgba(0,32,91,.7);
+    color:white;
+    width:42px;
+    height:42px;
+    cursor:pointer;
+    font-size:1.3rem;
+    border-radius:50%;
+    transition:.3s;
+}
+
+.prev:hover,
+.next:hover{
+    background:#00308F;
+}
+
+.prev{
+    left:10px;
+}
+
+.next{
+    right:10px;
+}
+
+/* Mobile */
+@media(max-width:900px){
+.volunteer-card{
+    flex-direction:column;
+}
+
+.volunteer-carousel{
+    width:100%;
+    height:250px;
+}
+}

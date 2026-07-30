@@ -25,22 +25,121 @@
   font-style: italic;
 }
 
-.coming-soon {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;          /* Bigger font */
-  color: #00308F;           /* Bold blue tone */
-  text-align: center;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1px;
+/* ================= TABLE OF CONTENTS ================= */
+
+.toc-toggle {
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    background: #00205B;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 2px 2px 8px #00308F;
+    transition: .3s;
+    z-index: 1001;
 }
 
-.contact-info {
-  font-family: 'Roboto', sans-serif;
-  font-size: .95rem;           /* Smaller font */
-  color: #333;
-  text-align: center;
-  font-style: italic;
+
+.toc-toggle:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px #00308F;
 }
 
 
+/* Sidebar */
 
+.toc-sidebar {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: 4px 0 12px rgba(0,0,0,.3);
+    transition: left .35s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    padding-top: 80px;
+}
+
+
+.toc-sidebar.open {
+    left: 0;
+}
+
+
+/* Header */
+
+.toc-title {
+    background: #00205B;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* Links */
+
+.toc-sidebar a {
+    display: block;
+    padding: 16px 25px;
+    color: #00205B;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .25s;
+}
+
+
+.toc-sidebar a:hover {
+    background: #00308F;
+    color: white;
+    padding-left: 35px;
+}
+
+
+/* Close button */
+
+.toc-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #00205B;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+
+.toc-close:hover {
+    color: #00308F;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: #00205B;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+}

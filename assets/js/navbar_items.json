@@ -4,6 +4,13 @@
     "url": "index.html",
     "type": "link"
   },
+
+  {
+    "label": "Volunteer Opportunities",
+    "url": "volunteer.html",
+    "type": "link"
+  },
+
   {
     "label": "Resources",
     "type": "dropdown",

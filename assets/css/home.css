@@ -351,3 +351,19 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .connect-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .connect-left h2::after {
+    margin: 8px auto 0;
+  }
+
+  .connect-right {
+    margin-top: 20px;
+  }
+}

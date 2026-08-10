@@ -4,6 +4,32 @@
     "url": "index.html",
     "type": "link"
   },
+<<<<<<< Updated upstream
+=======
+
+  {
+    "label": "Opportunities",
+    "type": "dropdown",
+    "items": [
+      {
+        "label": "Volunteer",
+        "url": "volunteer.html",
+        "type": "link"
+      },
+      {
+        "label": "Extracurriculars",
+        "url": "clubs.html",
+        "type": "link"
+      },
+      {
+        "label": "Officer Development Training (ODTs)",
+        "url": "odt.html",
+        "type": "link"
+      }
+    ]
+  },
+
+>>>>>>> Stashed changes
   {
     "label": "Resources",
     "type": "dropdown",
@@ -22,14 +48,10 @@
         "label": "POC AFSCs",
         "url": "afscs.html",
         "type": "link"
-      },
-      {
-        "label": "Extracurriculars",
-        "url": "clubs.html",
-        "type": "link"
       }
     ]
   },
+
   {
     "label": "POC Access",
     "type": "dropdown",

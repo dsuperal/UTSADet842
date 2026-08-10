@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UT San Antonio Detachment 842</title>
+
+  <!-- Orbitron font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/odts.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+
+  <!-- Javascript -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/navbar_handler.js"></script>
+  <script src="assets/js/odts.js"></script>
+</head>
+
+<body>
+  <!-- ================= NAV BAR ================= -->
+  <nav class="navbar navbar-expand-lg sticky-top" aria-label="Fifth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/detlogo.png" class="header-logo">
+      </a>
+      <a class="nav-title-sm d-lg-none" href="index.html">DETACHMENT 842</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar" style="">
+        <a class="nav-title me-auto d-none d-lg-block" href="index.html">UT SAN ANTONIO DETACHMENT 842</a>
+        <ul id="navbar-dropdown" class="navbar-nav mb-2 mb-lg-0"></ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Begin Page Content -->
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <main>
+
+        <section class="odt-hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    CADET OPPORTUNITIES
+                </span>
+
+                <h1>
+                    OPERATIONAL DEVELOPMENT
+                    <span>TRAINING</span>
+                </h1>
+
+                <p>
+                    Explore the opportunities Detachment 842 cadets
+                    have taken on beyond the classroom and discover
+                    where your own path could lead.
+                </p>
+
+                <a href="#opportunities" class="hero-button">
+                    EXPLORE OPPORTUNITIES
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INTRODUCTION
+        ====================================================== -->
+
+        <section class="odt-intro">
+
+            <div class="section-heading">
+
+                <span class="section-number">
+                    01
+                </span>
+
+                <div>
+                    <p class="eyebrow">
+                        BEYOND THE CLASSROOM
+                    </p>
+
+                    <h2>
+                        YOUR EXPERIENCE
+                        <span>STARTS HERE.</span>
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="intro-grid">
+
+                <div class="intro-text">
+
+                    <p>
+                        AFROTC is more than what happens during LLAB
+                        and class. Operational Development Training
+                        opportunities give cadets the chance to step
+                        outside the normal routine and experience
+                        different aspects of military service.
+                    </p>
+
+                    <p>
+                        The opportunities below highlight experiences
+                        Detachment 842 cadets have taken advantage of.
+                        Explore what each opportunity offers, see who
+                        has participated, and find something that
+                        interests you.
+                    </p>
+
+                    <p class="intro-emphasis">
+                        You don't have to know exactly where you're
+                        going yet. Start by seeing what's possible.
+                    </p>
+
+                </div>
+
+                <div class="stats-panel">
+
+                    <div class="stat">
+                        <strong id="opportunityCount">10+</strong>
+                        <span>OPPORTUNITIES</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong id="cadetCount">20+</strong>
+                        <span>CADETS FEATURED</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>842</strong>
+                        <span>DETACHMENT</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             OPPORTUNITY SECTION
+        ====================================================== -->
+
+        <section class="opportunities-section"
+                 id="opportunities">
+
+            <div class="section-top">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <div>
+                        <p class="eyebrow">
+                            EXPLORE
+                        </p>
+
+                        <h2>
+                            ODT
+                            <span>OPPORTUNITIES</span>
+                        </h2>
+                    </div>
+
+                </div>
+
+                <p class="section-description">
+                    Filter through previous opportunities and
+                    discover experiences that interest you.
+                </p>
+
+            </div>
+
+
+            <!-- Search -->
+            <div class="search-wrapper">
+
+                <div class="search-box">
+
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="text"
+                        id="odtSearch"
+                        placeholder="Search opportunities..."
+                        autocomplete="off">
+
+                    <button id="clearSearch"
+                            class="clear-search"
+                            aria-label="Clear search">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Filters -->
+            <div class="filter-wrapper">
+
+                <button class="filter-btn active"
+                        data-filter="all">
+                    ALL
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="leadership">
+                    LEADERSHIP
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="operations">
+                    OPERATIONS
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="aviation">
+                    AVIATION
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="professional">
+                    PROFESSIONAL
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="training">
+                    TRAINING
+                </button>
+
+            </div>
+
+
+            <!-- Cards generated by JavaScript -->
+            <div class="odt-grid" id="odtGrid"></div>
+
+
+            <!-- No Results -->
+            <div class="no-results"
+                 id="noResults">
+
+                <div class="no-results-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    NO OPPORTUNITIES FOUND
+                </h3>
+
+                <p>
+                    Try another search or category.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHY PARTICIPATE
+        ====================================================== -->
+
+        <section class="why-section">
+
+            <div class="why-image">
+
+                <img src="assets/images/odt/odt-feature.jpg"
+                     alt="Cadets participating in an ODT opportunity">
+
+            </div>
+
+            <div class="why-content">
+
+                <p class="eyebrow">
+                    03 / WHY PARTICIPATE?
+                </p>
+
+                <h2>
+                    DON'T JUST
+                    <span>LEARN ABOUT IT.</span>
+                    EXPERIENCE IT.
+                </h2>
+
+                <div class="why-list">
+
+                    <div class="why-item">
+                        <span>01</span>
+                        <div>
+                            <h3>BUILD EXPERIENCE</h3>
+                            <p>
+                                Gain exposure to environments and
+                                responsibilities that cannot be
+                                replicated in a classroom.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <span>02</span>
+                        <div>
+                            <h3>DISCOVER YOUR INTERESTS</h3>
+                            <p>
+                                Explore different career fields and
+                                find out what you actually enjoy doing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <span>03</span>
+                        <div>
+                            <h3>MEET PEOPLE</h3>
+                            <p>
+                                Build relationships with cadets,
+                                officers, and professionals outside
+                                your normal circle.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <span>04</span>
+                        <div>
+                            <h3>CHALLENGE YOURSELF</h3>
+                            <p>
+                                Put yourself in unfamiliar situations
+                                and grow through the experience.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUOTE
+        ====================================================== -->
+
+        <section class="odt-quote">
+
+            <div class="quote-mark">
+                "
+            </div>
+
+            <blockquote>
+                The best opportunities are the ones you
+                don't know you're capable of until you
+                take the first step.
+            </blockquote>
+
+            <p>
+                — DETACHMENT 842
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="odt-cta">
+
+            <p class="eyebrow">
+                YOUR TURN
+            </p>
+
+            <h2>
+                SEE SOMETHING
+                <span>YOU WANT TO DO?</span>
+            </h2>
+
+            <p>
+                Talk to your POC, cadre, or fellow cadets about
+                opportunities that interest you.
+            </p>
+
+            <a href="poc_afscs.html" class="cta-button">
+                FIND YOUR POC
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Detachment 842 |
+            University of Texas at San Antonio
+        </p>
+
+    </footer>
+
+
+    <!-- =========================================================
+         OPPORTUNITY MODAL
+    ========================================================== -->
+
+    <div class="odt-modal"
+         id="odtModal"
+         aria-hidden="true">
+
+        <div class="modal-backdrop"
+             id="modalBackdrop"></div>
+
+        <div class="modal-window"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modalTitle">
+
+            <button class="modal-close"
+                    id="modalClose"
+                    aria-label="Close">
+                ×
+            </button>
+
+            <div class="modal-image">
+                <img id="modalImage"
+                     src=""
+                     alt="">
+            </div>
+
+            <div class="modal-content">
+
+                <span class="modal-category"
+                      id="modalCategory">
+                </span>
+
+                <h2 id="modalTitle">
+                </h2>
+
+                <p id="modalDescription">
+                </p>
+
+                <div class="modal-details">
+
+                    <div>
+                        <span class="detail-label">
+                            WHAT IT IS
+                        </span>
+
+                        <p id="modalWhat">
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="detail-label">
+                            WHY IT MATTERS
+                        </span>
+
+                        <p id="modalWhy">
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="participants">
+
+                    <span class="detail-label">
+                        DET 842 CADETS WHO PARTICIPATED
+                    </span>
+
+                    <div id="modalNames"
+                         class="name-list">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="odts.js"></script>
+
+</body>
+</html>

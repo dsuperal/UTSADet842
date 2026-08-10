@@ -1,375 +1,1510 @@
-/* General Site Settings */
+/* =========================================================
+   DETACHMENT 842 HOMEPAGE
+   AIR FORCE / PROFESSIONAL DESIGN
+========================================================= */
+
+:root {
+    --air-force-blue: #00308f;
+    --deep-blue: #001f5c;
+    --navy: #07162f;
+    --dark-navy: #040d1d;
+    --light-blue: #eaf1fb;
+    --silver: #c8d0dc;
+    --white: #ffffff;
+    --text: #172033;
+    --muted: #657083;
+    --border: #dce3ed;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: white;
-  color: #00308F;
-  font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    background: #ffffff;
 }
 
-/* start page container */
-@media (max-width: 576px) {
-  .container {
-    width: 400px;
-  }
+a {
+    text-decoration: none;
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 700px;
-  }
+.container {
+    max-width: 1200px;
 }
 
-@media (min-width: 992px) {
-  .container {
-    width: 900px;
-  }
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.det-navbar {
+    background: var(--dark-navy);
+    min-height: 76px;
+    border-bottom: 3px solid var(--air-force-blue);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
+.header-logo {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
 }
 
-/* end page container */
-
-/* Navigation Bar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white !important;
-  border-bottom: 1px solid #00308F;
+.navbar-brand {
+    margin-right: 20px;
 }
 
-.navbar img {
-  height: 50px;
-  width: auto;
-  max-width: 100%;
+.navbar-title {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
-.navbar .nav-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-  color: #00308F !important;
-  font-weight: bold;
-  text-decoration: none !important;
+.navbar-title span {
+    display: block;
+    color: #9ebce8;
+    font-size: 0.78rem;
+    letter-spacing: 3px;
+    margin-top: 4px;
 }
 
-.navbar .nav-title-sm {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1rem;
-  color: #00308F !important;
-  font-weight: bold;
-  text-decoration: none !important;
+.mobile-title {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
 }
 
-.navbar a {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #00308F;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.det-navbar .nav-link {
+    color: #dfe7f5;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1.5rem 1rem !important;
+    transition: 0.25s ease;
 }
 
-.navbar a:hover {
-  color: #E27D3C;
+.det-navbar .nav-link:hover,
+.det-navbar .nav-link.active {
+    color: white;
+    background: rgba(255, 255, 255, 0.07);
 }
 
-/* Overlay */
-.hero {
-  background: url('../images/cadetwing-2025.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 700px;
+.det-navbar .dropdown-menu {
+    background: var(--dark-navy);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0;
+    padding: 0.5rem;
 }
 
-.hero img {
-  height: 100px;
-  height: 100px;
+.det-navbar .dropdown-item {
+    color: #dfe7f5;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.8px;
+    padding: 0.7rem 1rem;
 }
 
-.hero h1 {
-  color: #E27D3C;
+.det-navbar .dropdown-item:hover {
+    background: var(--air-force-blue);
+    color: white;
 }
 
-.hero h2 {
-  color: #00308F;
+.navbar-toggler {
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
-/* Divider */
-.divider {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 0px;
-  padding-left: 60px;
-  padding-right: 60px;
+.navbar-toggler-icon {
+    filter: invert(1);
 }
 
-.divider .fa {
-  color: #00308F;
-  font-size: 60px;
-  margin-bottom: 10px;
+
+/* =========================================================
+   COLOR SYSTEM
+========================================================= */
+
+:root {
+    --navy: #00308F;
+    --deep-blue: #00205B;
+    --dark-navy: #071A33;
+
+    --air-force-blue: #00308F;
+    --utsa-orange: #F15A24;
+
+    --text: #172033;
+    --muted: #667085;
+    --border: #D9E0EA;
+    --light-bg: #F4F7FA;
 }
 
-/* Image Carousel */
-.carousel {
-  position: relative;
-  width: 100%;
-  margin: 0px auto;
-  overflow: hidden;
+
+/* =========================================================
+   HERO CAROUSEL
+========================================================= */
+
+#detCarousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #071A33;
 }
 
-.carousel-item {
-  min-width: 100%;
-  position: relative;
-  text-align: center;
+
+/* Every slide gets the exact same dimensions */
+
+#detCarousel .carousel-inner {
+    width: 100%;
 }
 
-.carousel-item img {
-  width: 100vw;
-  height: 60vh;
-  object-fit: cover;
-  display: inline-block;
+#detCarousel .carousel-item {
+    position: relative;
+    width: 100%;
+    height: 72vh;
+    min-height: 520px;
+    max-height: 760px;
+    overflow: hidden;
 }
 
-.carousel-text {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  /* font-size: 1.5rem; */
-  text-align: center;
-  letter-spacing: 1px;
-}
 
-.callout {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+/* Images */
 
-/* Det Opportunities */
-.det-news {
-  text-align: center;
-  padding: 40px 0px;
-}
-
-.det-news .header {
-  font-size: 2rem;
-  margin-bottom: 50px;
-}
-
-.card {
-  overflow: hidden;
-  border-style: none;
-  border-radius: 12px;
-  width: auto;
-  max-width: 400px;
-  aspect-ratio: 4/3;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 4px 12px #00308F;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  transform: scale(1.05);
-}
-
-.card-text {
-  color: #ffffff;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-
-.card-text p {
-  margin: 0;
-}
-
-@media (max-width: 992px) {
-  /* .news-link {
-    max-width: 150px;
-  } */
-
-  .card-text {
-    height: 100%;
-  }
-
-  .card-text p {
+#detCarousel .carousel-item img {
     position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+}
+
+
+/* Dark professional overlay */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 20, 43, 0.90) 0%,
+            rgba(4, 20, 43, 0.65) 42%,
+            rgba(4, 20, 43, 0.20) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* Orange accent line */
+
+.hero-overlay::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 5px;
+
+    
+}
+
+
+/* Carousel caption */
+
+.carousel-caption-custom {
+    position: absolute;
+
+    left: 9%;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
+    transform: translateY(-50%);
+
+    width: min(650px, 75%);
+
+    z-index: 2;
+
+    text-align: left;
+    color: white;
 }
 
-.card-img-overlay {
-  padding: 0;
+
+/* Small military-style label */
+
+.carousel-caption-custom .eyebrow {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding-left: 12px;
+
+    border-left: 4px solid var(--utsa-orange);
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #DCE7F8;
 }
 
-/* Info Sections */
-.info-header {
-  font-family: 'Orbitron', sans-serif;
-  /* font-size: 1.5rem; */
-  color: #00308F;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
+
+/* Hero heading */
+
+.carousel-caption-custom h1 {
+    margin: 0;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    color: white;
 }
 
-.info-header::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #00308F;
-  margin: 8px auto 0;
+
+.carousel-caption-custom h1 strong {
+    display: block;
+
+    color: white;
+
+    font-weight: 800;
 }
 
-.info-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  color: #00308F;
+
+/* Orange emphasis */
+
+.carousel-caption-custom h1 strong::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin-top: 18px;
+
+    background: var(--utsa-orange);
 }
 
-.info-list li {
-  margin-bottom: 10px;
+
+/* Hero description */
+
+.carousel-caption-custom p {
+    max-width: 560px;
+
+    margin-top: 22px;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    color: #E5ECF5;
 }
 
-/* CONNECT SECTION */
+
+/* =========================================================
+   CAROUSEL CONTROLS
+========================================================= */
+
+#detCarousel .carousel-control-prev,
+#detCarousel .carousel-control-next {
+    width: 8%;
+
+    z-index: 5;
+
+    opacity: 0.8;
+
+    transition: 0.25s ease;
+}
+
+
+#detCarousel .carousel-control-prev:hover,
+#detCarousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+
+/* Make Bootstrap arrows visible */
+
+#detCarousel .carousel-control-prev-icon,
+#detCarousel .carousel-control-next-icon {
+    width: 42px;
+    height: 42px;
+
+    padding: 10px;
+
+    background-color: rgba(255,255,255,0.35);
+
+    background-size: 55%;
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   CAROUSEL INDICATORS
+========================================================= */
+
+#detCarousel .carousel-indicators {
+    z-index: 6;
+
+    bottom: 22px;
+
+    margin-bottom: 0;
+}
+
+
+#detCarousel .carousel-indicators button {
+    width: 28px;
+    height: 3px;
+
+    margin: 0 4px;
+
+    border: 0;
+
+    opacity: 0.55;
+
+    background-color: white;
+
+    transition: 0.25s ease;
+}
+
+
+#detCarousel .carousel-indicators button.active {
+    width: 45px;
+
+    opacity: 1;
+
+    
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    color: var(--air-force-blue);
+}
+
+
+.section-label::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 24px;
+    height: 3px;
+
+    margin-right: 9px;
+
+    vertical-align: middle;
+
+    background: var(--utsa-orange);
+}
+
+
+/* =========================================================
+   MISSION + UPCOMING EVENTS
+========================================================= */
+
+.mission-section {
+    padding: 90px 0;
+
+    background: white;
+}
+
+
+/*
+   THIS IS THE IMPORTANT FIX.
+
+   Mission and Upcoming Events are now explicitly
+   placed into two columns.
+*/
+
+.mission-events-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(420px, 0.85fr);
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   MISSION
+========================================================= */
+
+.mission-main h2 {
+    margin: 0 0 24px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: clamp(2rem, 4vw, 3.3rem);
+
+    line-height: 1.08;
+
+    color: var(--navy);
+}
+
+
+.mission-main h2 span {
+    display: block;
+
+    color: var(--air-force-blue);
+}
+
+
+.mission-lead {
+    max-width: 680px;
+
+    margin-bottom: 15px;
+
+    font-size: 1.15rem;
+    font-weight: 500;
+
+    line-height: 1.7;
+
+    color: var(--text);
+}
+
+
+.mission-main p:not(.mission-lead) {
+    max-width: 680px;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   UPCOMING EVENTS
+========================================================= */
+
+.upcoming-events {
+    position: relative;
+
+    padding: 30px;
+
+    background: #F5F8FC;
+
+    border: 1px solid var(--border);
+
+    border-top: 4px solid var(--air-force-blue);
+
+    box-shadow: 0 12px 35px rgba(0, 32, 91, 0.08);
+}
+
+
+/* Orange corner accent */
+
+.upcoming-events::before {
+    content: "";
+
+    position: absolute;
+
+    top: -4px;
+    left: 0;
+
+    width: 55px;
+    height: 4px;
+
+    background: var(--utsa-orange);
+}
+
+
+.events-header {
+    margin-bottom: 24px;
+}
+
+
+.events-header h2 {
+    margin: 0;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 1.55rem;
+
+    letter-spacing: 0.5px;
+
+    color: var(--navy);
+}
+
+
+/* Event list */
+
+.event-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* Individual event */
+
+.event-item {
+    display: grid;
+
+    grid-template-columns: 65px 1fr;
+
+    min-height: 100px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    transition: 0.25s ease;
+}
+
+
+.event-item:hover {
+    border-color: var(--air-force-blue);
+
+    transform: translateX(3px);
+
+    box-shadow: 0 5px 15px rgba(0, 48, 143, 0.08);
+}
+
+
+/* Date */
+
+.event-date {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: var(--air-force-blue);
+
+    color: white;
+}
+
+
+.event-date span {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 0.58rem;
+
+    letter-spacing: 1.5px;
+}
+
+
+.event-date strong {
+    margin-top: 3px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 1.45rem;
+}
+
+
+/* Event content */
+
+.event-info {
+    padding: 17px 18px;
+}
+
+
+.event-type {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 0.54rem;
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+
+    color: var(--utsa-orange);
+}
+
+
+.event-info h3 {
+    margin: 0 0 5px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 0.78rem;
+
+    color: var(--navy);
+}
+
+
+.event-info p {
+    margin: 0;
+
+    font-size: 0.78rem;
+
+    line-height: 1.45;
+
+    color: var(--muted);
+}
+
+
+/* Announcement */
+
+.announcement-item {
+    grid-template-columns: 65px 1fr;
+}
+
+
+.announcement-date {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--dark-navy);
+
+    color: white;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 1.7rem;
+
+    font-weight: 700;
+
+    border-top: 4px solid var(--utsa-orange);
+}
+
+
+/* =========================================================
+   USEFUL LINKS + WING GOALS
+========================================================= */
+
+.resources-section {
+    padding: 90px 0;
+
+    background: var(--light-bg);
+}
+
+
+.resources-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 35px;
+
+    align-items: stretch;
+}
+
+
+/* Remove old section padding because
+   the parent controls spacing */
+
+.useful-links-section,
+.wing-goals-section {
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+}
+
+
+/* Section headings */
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+
+.section-heading h2 {
+    margin: 0;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 1.65rem;
+
+    color: var(--navy);
+
+    letter-spacing: 0.5px;
+}
+
+
+.section-heading p {
+    margin: 10px 0 0;
+
+    color: var(--muted);
+
+    font-size: 0.88rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   USEFUL LINKS
+========================================================= */
+
+.useful-links-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.useful-link-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 15px 17px;
+
+    background: #F7F9FC;
+
+    border: 1px solid var(--border);
+
+    border-left: 3px solid var(--air-force-blue);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+
+.useful-link-card:hover {
+    color: var(--text);
+
+    background: white;
+
+    border-left-color: var(--utsa-orange);
+
+    transform: translateX(4px);
+
+    box-shadow: 0 5px 15px rgba(0, 48, 143, 0.08);
+}
+
+
+.useful-link-card h3 {
+    margin: 0 0 4px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 0.73rem;
+
+    letter-spacing: 0.7px;
+
+    color: var(--navy);
+}
+
+
+.useful-link-card p {
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 0.77rem;
+
+    color: var(--muted);
+}
+
+
+.link-arrow {
+    margin-left: 15px;
+
+    color: var(--utsa-orange);
+
+    font-size: 1.15rem;
+
+    transition: transform 0.2s ease;
+}
+
+
+.useful-link-card:hover .link-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   CADET WING GOALS
+========================================================= */
+
+.wing-goals-section {
+    background:
+        linear-gradient(
+            135deg,
+            #00308F 0%,
+            #00245F 100%
+        );
+
+    color: white;
+
+    border: none;
+}
+
+
+.wing-goals-section .section-label {
+    color: #D7E4F8;
+}
+
+
+.wing-goals-section .section-heading h2 {
+    color: white;
+}
+
+
+.wing-goals-section .section-heading p {
+    color: #D4E0F0;
+}
+
+
+/* Orange divider */
+
+.wing-goals-section .section-heading::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    margin-top: 18px;
+
+    background: var(--utsa-orange);
+}
+
+
+/* Goals */
+
+.goals-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+
+.goal-card {
+    padding: 20px 18px;
+
+    background: rgba(255,255,255,0.07);
+
+    border: 1px solid rgba(255,255,255,0.16);
+
+    border-top: 3px solid rgba(241,90,36,0.7);
+
+    transition: 0.25s ease;
+}
+
+
+.goal-card:hover {
+    background: rgba(255,255,255,0.12);
+
+    border-top-color: var(--utsa-orange);
+
+    transform: translateY(-3px);
+}
+
+
+.goal-number {
+    margin-bottom: 7px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 1.55rem;
+
+    font-weight: 700;
+
+    color: white;
+}
+
+
+.goal-title {
+    margin-bottom: 8px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 0.64rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    color: #D8E5F7;
+}
+
+
+.goal-description {
+    font-size: 0.76rem;
+
+    line-height: 1.5;
+
+    color: #D4DFED;
+}
+
+
+/* =========================================================
+   CONNECT
+========================================================= */
+
 .connect-section {
-  background-color: #00308F;
-  /* light gray */
-  padding: 50px 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 3px solid #ffffff;
+    padding: 90px 0;
+
+    background: white;
+
+    border-top: 1px solid var(--border);
 }
 
-.connect-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  /* allows stacking on mobile */
-  width: 100%;
-  max-width: 1200px;
+
+.connect-grid {
+    display: grid;
+
+    grid-template-columns: 0.75fr 1.25fr;
+
+    gap: 70px;
+
+    align-items: center;
 }
 
-.connect-left {
-  flex: 1;
-  min-width: 250px;
+
+.connect-heading h2 {
+    margin: 0 0 18px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 2.5rem;
+
+    line-height: 1.1;
+
+    color: var(--navy);
 }
 
-.connect-left h2 {
-  font-family: 'Orbitron', sans-serif;
-  color: #ffffff;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  position: relative;
+
+.connect-heading h2 span {
+    display: block;
+
+    color: var(--air-force-blue);
 }
 
-.social-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+.connect-heading p {
+    max-width: 480px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.8;
 }
 
-.social-links li {
-  margin: 10px 0;
+
+/* =========================================================
+   SOCIAL MEDIA CARDS
+========================================================= */
+
+.social-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
 }
 
-.social-links a {
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  color: #ffffff;
-  transition: color 0.3s ease;
+
+.social-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 18px;
+
+    background: #F7F9FC;
+
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
 }
 
-.social-links a:hover {
-  color: #007FFF;
-  font-weight: bold;
+
+.social-card:hover {
+    color: var(--text);
+
+    background: white;
+
+    border-color: var(--air-force-blue);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 48, 143, 0.09);
 }
 
-.connect-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.connect-right img {
-  width: 250px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+/* Actual social media logo */
 
 .social-icon {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    object-fit: contain;
 }
 
 
-/* Footer */
-footer {
-  background-color: #00308F;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  padding: 1rem 0;
+.social-info {
+    min-width: 0;
 }
 
-footer p {
-  margin-bottom: 0 !important;
+
+.social-info span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 0.52rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    color: var(--muted);
 }
 
-/* Table Styles */
-.events-table {
-  margin-bottom: 0%;
+
+.social-info strong {
+    display: block;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 0.78rem;
+
+    color: var(--navy);
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
 }
 
-.events-table td {
-  color: #00308F;
-  padding-top: 0;
-  padding-bottom: 10px;
+
+.social-arrow {
+    margin-left: auto;
+
+    color: var(--utsa-orange);
+
+    font-size: 1rem;
+
+    transition: transform 0.2s ease;
 }
+
+
+.social-card:hover .social-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.det-footer {
+    padding: 45px 0 20px;
+
+    background: var(--dark-navy);
+
+    color: white;
+}
+
+
+.footer-main {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.footer-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.footer-brand img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+}
+
+
+.footer-brand strong,
+.footer-brand span {
+    display: block;
+
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.footer-brand strong {
+    font-size: 0.9rem;
+
+    letter-spacing: 1px;
+}
+
+
+.footer-brand span {
+    margin-top: 5px;
+
+    color: #9DAFC8;
+
+    font-size: 0.58rem;
+
+    letter-spacing: 1px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 24px;
+}
+
+
+.footer-links a {
+    color: #B8C6D9;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 0.6rem;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+
+.footer-links a:hover {
+    color: var(--utsa-orange);
+}
+
+
+.footer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 38px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255,255,255,0.12);
+
+    color: #73849D;
+
+    font-size: 0.67rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    /* Mission + events */
+
+    .mission-events-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    /* Resources */
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Connect */
+
+    .connect-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    /* Carousel */
+
+    #detCarousel .carousel-item {
+        height: 65vh;
+
+        min-height: 480px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Carousel */
+
+    #detCarousel .carousel-item {
+        height: 62vh;
+
+        min-height: 440px;
+    }
+
+
+    .carousel-caption-custom {
+        left: 8%;
+
+        width: 82%;
+    }
+
+
+    .carousel-caption-custom h1 {
+        font-size: 2.15rem;
+    }
+
+
+    .carousel-caption-custom p {
+        font-size: 0.88rem;
+    }
+
+
+    /* Mission */
+
+    .mission-section {
+        padding: 70px 20px;
+    }
+
+
+    .mission-main h2 {
+        font-size: 2.15rem;
+    }
+
+
+    /* Upcoming events */
+
+    .upcoming-events {
+        padding: 24px;
+    }
+
+
+    /* Resources */
+
+    .resources-section {
+        padding: 70px 20px;
+    }
+
+
+    .useful-links-section,
+    .wing-goals-section {
+        padding: 28px 22px;
+    }
+
+
+    .goals-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Connect */
+
+    .connect-section {
+        padding: 70px 20px;
+    }
+
+
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Footer */
+
+    .det-footer {
+        padding: 40px 20px 20px;
+    }
+
+
+    .footer-main,
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .footer-links {
+        gap: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    #detCarousel .carousel-item {
+        height: 60vh;
+
+        min-height: 410px;
+    }
+
+
+    .carousel-caption-custom {
+        left: 9%;
+
+        width: 78%;
+    }
+
+
+    .carousel-caption-custom .eyebrow {
+        font-size: 0.6rem;
+
+        letter-spacing: 2px;
+    }
+
+
+    .carousel-caption-custom h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .carousel-caption-custom p {
+        font-size: 0.8rem;
+    }
+
+
+    .mission-main h2 {
+        font-size: 1.9rem;
+    }
+
+
+    .event-item {
+        grid-template-columns: 58px 1fr;
+    }
+
+
+    .announcement-item {
+        grid-template-columns: 58px 1fr;
+    }
+
+
+    .event-info {
+        padding: 14px;
+    }
+
+
+    .event-info h3 {
+        font-size: 0.7rem;
+    }
+
+
+    .event-info p {
+        font-size: 0.72rem;
+    }
+
+
+    .connect-heading h2 {
+        font-size: 2rem;
+    }
+
+
+    .footer-brand img {
+        width: 48px;
+        height: 48px;
+    }
+
+}
+

@@ -1,0 +1,525 @@
+/* =========================================================
+   ODT HERO
+========================================================= */
+
+.odt-hero {
+    position: relative;
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        url("../images/odts/odt-hero.jpg")
+        center / cover no-repeat;
+
+    color: white;
+}
+
+.odt-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 48, 143, 0.94),
+            rgba(0, 20, 60, 0.72)
+        );
+}
+
+.odt-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 720px;
+    padding: 90px 0;
+}
+
+.odt-hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    margin: 15px 0 25px;
+}
+
+.odt-hero h1 span {
+    display: block;
+    color: #f15a29;
+}
+
+.odt-hero p {
+    max-width: 650px;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    color: #e5ebf5;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.odt-intro {
+    padding: 90px 0;
+    background: white;
+}
+
+.odt-intro-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.odt-intro-heading h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+
+    color: var(--navy);
+}
+
+.odt-intro-heading h2 span {
+    color: #f15a29;
+}
+
+.odt-intro-content {
+    border-left: 4px solid #f15a29;
+    padding-left: 30px;
+}
+
+.odt-intro-content p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.odt-lead {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--navy) !important;
+}
+
+
+/* =========================================================
+   OPPORTUNITIES
+========================================================= */
+
+.odt-opportunities {
+    padding: 100px 0;
+    background: #f4f7fb;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--navy);
+    font-size: 2.4rem;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+
+/* ODT CARDS */
+
+.odt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.odt-card {
+    position: relative;
+
+    display: flex;
+    gap: 22px;
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--air-force-blue);
+
+    transition: 0.25s ease;
+}
+
+.odt-card:hover {
+    transform: translateY(-5px);
+
+    border-left-color: #f15a29;
+
+    box-shadow:
+        0 12px 30px rgba(0, 48, 143, 0.1);
+}
+
+.odt-card-number {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    color: #f15a29;
+}
+
+.odt-card-content {
+    padding-right: 25px;
+}
+
+.odt-type {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+
+    color: var(--air-force-blue);
+}
+
+.odt-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+
+    color: var(--navy);
+
+    margin: 10px 0;
+}
+
+.odt-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.odt-card-arrow {
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+
+    color: var(--air-force-blue);
+
+    font-size: 1.2rem;
+}
+
+.odt-card-featured {
+    border-left-color: #f15a29;
+}
+
+
+/* =========================================================
+   CADET EXPERIENCES
+========================================================= */
+
+.cadet-experiences {
+    padding: 100px 0;
+    background: white;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.experience-card {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    overflow: hidden;
+
+    transition: 0.25s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 48, 143, 0.12);
+}
+
+.experience-image {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.experience-card:hover img {
+    transform: scale(1.05);
+}
+
+.experience-tag {
+    position: absolute;
+
+    bottom: 12px;
+    left: 12px;
+
+    padding: 7px 10px;
+
+    background: #00308f;
+    color: white;
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+}
+
+.experience-content {
+    padding: 25px;
+}
+
+.experience-year {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+
+    color: #f15a29;
+}
+
+.experience-content h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+
+    color: var(--navy);
+
+    margin: 10px 0;
+}
+
+.experience-content p {
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.cadet-name {
+    margin-top: 20px;
+    padding-top: 15px;
+
+    border-top: 1px solid var(--border);
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+
+    color: #8994a5;
+}
+
+.cadet-name strong {
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--navy);
+    font-size: 0.7rem;
+}
+
+
+/* =========================================================
+   FEATURED ODT
+========================================================= */
+
+.featured-odt {
+    padding: 100px 0;
+
+    background: #edf2f8;
+}
+
+.featured-odt-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.featured-odt-image img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    box-shadow:
+        15px 15px 0 #f15a29;
+}
+
+.featured-odt-content h2 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    color: var(--navy);
+}
+
+.featured-odt-content h2 span {
+    color: #f15a29;
+}
+
+.featured-odt-content p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.featured-stats {
+    display: flex;
+    gap: 40px;
+
+    margin-top: 35px;
+}
+
+.featured-stats strong {
+    display: block;
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.7rem;
+
+    color: var(--air-force-blue);
+}
+
+.featured-stats span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.odt-cta {
+    padding: 90px 0;
+
+    background: #00308f;
+
+    color: white;
+
+    text-align: center;
+}
+
+.odt-cta-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.odt-cta .section-label {
+    color: #f15a29;
+}
+
+.odt-cta h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.7rem;
+}
+
+.odt-cta h2 span {
+    color: #f15a29;
+}
+
+.odt-cta p {
+    color: #dbe5f5;
+    line-height: 1.7;
+}
+
+.odt-cta .primary-button {
+    background: white;
+    color: #00308f;
+}
+
+.odt-cta .primary-button:hover {
+    background: #f15a29;
+    color: white;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .odt-intro-grid,
+    .featured-odt-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .odt-hero {
+        min-height: 470px;
+    }
+
+    .odt-hero-content {
+        padding: 70px 20px;
+    }
+
+    .odt-intro,
+    .odt-opportunities,
+    .cadet-experiences,
+    .featured-odt,
+    .odt-cta {
+        padding: 70px 20px;
+    }
+
+    .odt-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-odt-image img {
+        height: 350px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .odt-hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .odt-card {
+        padding: 22px;
+    }
+
+    .featured-stats {
+        gap: 25px;
+    }
+
+    .featured-stats strong {
+        font-size: 1.4rem;
+    }
+
+}

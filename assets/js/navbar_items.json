@@ -5,10 +5,26 @@
     "type": "link"
   },
 
-  {
-    "label": "Volunteer Opportunities",
-    "url": "volunteer.html",
-    "type": "link"
+   {
+    "label": "Opportunities",
+    "type": "dropdown",
+    "items": [
+      {
+        "label": "Volunteer",
+        "url": "volunteer.html",
+        "type": "link"
+      },
+      {
+        "label": "ODTs",
+        "url": "odts.html",
+        "type": "link"
+      },
+      {
+        "label": "Extracurriculars",
+        "url": "clubs.html",
+        "type": "link"
+      }
+    ]
   },
 
   {
@@ -29,14 +45,10 @@
         "label": "POC AFSCs",
         "url": "afscs.html",
         "type": "link"
-      },
-      {
-        "label": "Extracurriculars",
-        "url": "clubs.html",
-        "type": "link"
       }
     ]
   },
+
   {
     "label": "POC Access",
     "type": "dropdown",

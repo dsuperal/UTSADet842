@@ -5,7 +5,7 @@
     "type": "link"
   },
 
-   {
+  {
     "label": "Opportunities",
     "type": "dropdown",
     "items": [
@@ -15,13 +15,13 @@
         "type": "link"
       },
       {
-        "label": "ODTs",
-        "url": "odts.html",
+        "label": "Extracurriculars",
+        "url": "clubs.html",
         "type": "link"
       },
       {
-        "label": "Extracurriculars",
-        "url": "clubs.html",
+        "label": "Officer Development Training (ODTs)",
+        "url": "odt.html",
         "type": "link"
       }
     ]
@@ -55,17 +55,17 @@
     "items": [
       {
         "label": "POC Resources",
-        "url": "poc_login.html",
+        "url": "poc_login.html?target=poc_resources.html",
         "type": "link"
       },
       {
         "label": "PDT Continuity",
-        "url": "poc_login.html",
+        "url": "poc_login.html?target=poc_pdt.html",
         "type": "link"
       },
       {
         "label": "POC Job Continuity",
-        "url": "poc_login.html",
+        "url": "poc_login.html?target=poc_job.html",
         "type": "link"
       },
       {

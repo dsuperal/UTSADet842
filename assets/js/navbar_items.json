@@ -55,17 +55,17 @@
     "items": [
       {
         "label": "POC Resources",
-        "url": "poc_login.html?target=poc_resources.html",
+        "url": "poc_login.html",
         "type": "link"
       },
       {
         "label": "PDT Continuity",
-        "url": "poc_login.html?target=poc_pdt.html",
+        "url": "poc_login.html",
         "type": "link"
       },
       {
         "label": "POC Job Continuity",
-        "url": "poc_login.html?target=poc_job.html",
+        "url": "poc_login.html",
         "type": "link"
       },
       {
